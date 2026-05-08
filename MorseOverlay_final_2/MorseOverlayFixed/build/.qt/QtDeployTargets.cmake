@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_MorseOverlayApp_FILE /Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/MorseOverlayApp)
-set(__QT_DEPLOY_TARGET_MorseOverlayApp_TYPE EXECUTABLE)
