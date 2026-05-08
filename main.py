@@ -37,7 +37,7 @@ for zeichen in eingabe:
             maxLeerzeichen += 1
 
     elif zeichen in morse:
-        
+
         maxLeerzeichen = 1
         ausgabe += morse[zeichen]
         ausgabe += " "

@@ -1,0 +1,13 @@
+module MorseOverlay
+typeinfo MorseOverlayApp.qmltypes
+prefer :/MorseOverlay/
+MorseOverlay 1.0 MorseOverlay.qml
+MorseLogic 1.0 MorseLogic.qml
+TopBar 1.0 TopBar.qml
+MainDisplay 1.0 MainDisplay.qml
+ModeBar 1.0 ModeBar.qml
+SeqDisplay 1.0 SeqDisplay.qml
+KeyHints 1.0 KeyHints.qml
+ConfigPanel 1.0 ConfigPanel.qml
+depends QtQuick
+

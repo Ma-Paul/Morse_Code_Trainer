@@ -1,0 +1,53 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "MorseOverlayApp_autogen/timestamp" "custom" "MorseOverlayApp_autogen/deps"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/MorseOverlayApp_autogen/mocs_compilation.cpp" "CMakeFiles/MorseOverlayApp.dir/MorseOverlayApp_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/MorseOverlayApp_autogen/mocs_compilation.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.qt/rcc/qrc_MorseOverlayApp_raw_qml_0.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.qt/rcc/qrc_MorseOverlayApp_raw_qml_0.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.qt/rcc/qrc_MorseOverlayApp_raw_qml_0.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.qt/rcc/qrc_qmake_MorseOverlay.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.qt/rcc/qrc_qmake_MorseOverlay.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.qt/rcc/qrc_qmake_MorseOverlay.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ConfigPanel_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_ConfigPanel_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_ConfigPanel_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_KeyHints_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_KeyHints_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_KeyHints_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MainDisplay_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MainDisplay_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MainDisplay_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ModeBar_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_ModeBar_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_ModeBar_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseLogic_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MorseLogic_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MorseLogic_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseOverlay_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MorseOverlay_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_MorseOverlay_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_SeqDisplay_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_SeqDisplay_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_SeqDisplay_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_TopBar_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_TopBar_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_TopBar_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_main_qml.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_main_qml.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_main_qml.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_qmlcache_loader.cpp" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_qmlcache_loader.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/build/.rcc/qmlcache/MorseOverlayApp_qmlcache_loader.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/main.cpp" "CMakeFiles/MorseOverlayApp.dir/main.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/main.cpp.o.d"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/morseoverlayapp_qmltyperegistrations.cpp" "CMakeFiles/MorseOverlayApp.dir/morseoverlayapp_qmltyperegistrations.cpp.o" "gcc" "CMakeFiles/MorseOverlayApp.dir/morseoverlayapp_qmltyperegistrations.cpp.o.d"
+  )
+
+# Pairs of files generated by the same build rule.
+set(CMAKE_MULTIPLE_OUTPUT_PAIRS
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ConfigPanel_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ConfigPanel_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_KeyHints_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_KeyHints_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MainDisplay_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MainDisplay_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ModeBar_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_ModeBar_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseLogic_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseLogic_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseOverlay_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_MorseOverlay_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_SeqDisplay_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_SeqDisplay_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_TopBar_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_TopBar_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_main_qml.cpp.aotstats" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/.rcc/qmlcache/MorseOverlayApp_main_qml.cpp"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/MorseOverlay/MorseOverlayApp.qmltypes" "/Users/paulmantz/git/Morse_Code_Trainer/MorseOverlay_final_2/MorseOverlayFixed/build/morseoverlayapp_qmltyperegistrations.cpp"
+  )
+
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
