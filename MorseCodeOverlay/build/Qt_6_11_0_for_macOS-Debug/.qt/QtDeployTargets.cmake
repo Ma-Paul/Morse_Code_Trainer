@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appMorseCodeOverlay_FILE /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay.app/Contents/MacOS/appMorseCodeOverlay)
+set(__QT_DEPLOY_TARGET_appMorseCodeOverlay_TYPE EXECUTABLE)

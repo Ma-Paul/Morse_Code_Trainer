@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/qt/qml/MorseCodeOverlay/">
+    <file alias="Pause.jpg">/Users/paulmantz/MorseCodeOverlay/Pause.jpg</file>
+    <file alias="Long.png">/Users/paulmantz/MorseCodeOverlay/Long.png</file>
+    <file alias="short.png">/Users/paulmantz/MorseCodeOverlay/short.png</file>
+    <file alias="Time.png">/Users/paulmantz/MorseCodeOverlay/Time.png</file>
+    <file alias="Single.jpg">/Users/paulmantz/MorseCodeOverlay/Single.jpg</file>
+    <file alias="Double.jpg">/Users/paulmantz/MorseCodeOverlay/Double.jpg</file>
+    <file alias="Nextslide.png">/Users/paulmantz/MorseCodeOverlay/Nextslide.png</file>
+    <file alias="Previousslide.png">/Users/paulmantz/MorseCodeOverlay/Previousslide.png</file>
+    <file alias="main.py">/Users/paulmantz/MorseCodeOverlay/main.py</file>
+  </qresource>
+</RCC>
+

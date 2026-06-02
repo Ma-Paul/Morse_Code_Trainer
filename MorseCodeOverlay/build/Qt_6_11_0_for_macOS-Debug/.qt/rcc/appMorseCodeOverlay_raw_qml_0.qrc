@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/qt/qml/MorseCodeOverlay/">
+    <file alias="Main.qml">/Users/paulmantz/MorseCodeOverlay/Main.qml</file>
+    <file alias="HomePage.qml">/Users/paulmantz/MorseCodeOverlay/HomePage.qml</file>
+    <file alias="Inputtype.qml">/Users/paulmantz/MorseCodeOverlay/Inputtype.qml</file>
+    <file alias="Globalvariables.js">/Users/paulmantz/MorseCodeOverlay/Globalvariables.js</file>
+    <file alias="Specifytype.qml">/Users/paulmantz/MorseCodeOverlay/Specifytype.qml</file>
+    <file alias="Mode.qml">/Users/paulmantz/MorseCodeOverlay/Mode.qml</file>
+  </qresource>
+</RCC>
+

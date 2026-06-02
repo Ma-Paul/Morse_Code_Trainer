@@ -1,0 +1,11 @@
+module MorseCodeOverlay
+typeinfo appMorseCodeOverlay.qmltypes
+prefer :/qt/qml/MorseCodeOverlay/
+Main 254.0 Main.qml
+HomePage 254.0 HomePage.qml
+Inputtype 254.0 Inputtype.qml
+Globalvariables 254.0 Globalvariables.js
+Specifytype 254.0 Specifytype.qml
+Mode 254.0 Mode.qml
+depends QtQuick
+
