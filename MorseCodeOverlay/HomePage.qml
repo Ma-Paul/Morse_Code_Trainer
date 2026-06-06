@@ -10,13 +10,14 @@ Page {
     anchors.fill: parent
     Rectangle {
         id: bekguaund
+        visible: true
         width: parent.width
         height: parent.height
         gradient: Gradient {
 
-                GradientStop { position: 0.0; color: "#000000" }
-                GradientStop { position: 0.25; color: "#000000" }
-                GradientStop { position: 1.0; color: "#ffffff" }
+                GradientStop { position: 0.0; color: "#7A8B8B" }
+                GradientStop { position: 0.25; color: "#7A8B8B" }
+                GradientStop { position: 1.0; color: "#68838B" }
 
             }
 
@@ -48,14 +49,7 @@ Page {
             y: parent.height / 2 - height / 2
             width: 200
             height: 100
-            gradient: Gradient {
-
-                    GradientStop { position: 0.0; color: "#c998fa" }
-
-
-                    GradientStop { position: 1.0; color: "#391b57" }
-
-                }
+	    color: "4169E1"                
             radius: 20
             MouseArea {
                 anchors.fill: parent
