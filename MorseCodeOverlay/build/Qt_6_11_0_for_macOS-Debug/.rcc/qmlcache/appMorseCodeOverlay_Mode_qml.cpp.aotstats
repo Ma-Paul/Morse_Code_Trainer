@@ -18,7 +18,7 @@
                             "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 14,
+                            "line": 13,
                             "message": ""
                         },
                         {
@@ -90,7 +90,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 53,
+                            "line": 44,
                             "message": ""
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 54,
+                            "line": 45,
                             "message": ""
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 58,
+                            "line": 49,
                             "message": ""
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 59,
+                            "line": 50,
                             "message": ""
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 60,
+                            "line": 51,
                             "message": ""
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 61,
+                            "line": 52,
                             "message": ""
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 64,
+                            "line": 56,
                             "message": ""
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 65,
+                            "line": 57,
                             "message": ""
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 70,
+                            "line": 62,
                             "message": ""
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 94,
+                            "line": 73,
                             "message": "Cannot access value for name AppBridge"
                         },
                         {
@@ -170,6 +170,46 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
+                            "line": 72,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 86,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "height",
+                            "line": 87,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
+                            "line": 88,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
+                            "line": 89,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
                             "line": 93,
                             "message": ""
                         },
@@ -177,80 +217,40 @@
                             "codegenResult": 0,
                             "column": 20,
                             "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 107,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "height",
-                            "line": 108,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
                             "functionName": "y",
+                            "line": 94,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 99,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 110,
+                            "message": "Cannot access value for name AppBridge"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
                             "line": 109,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 110,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 113,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 114,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 119,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 143,
-                            "message": "Cannot access value for name AppBridge"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 142,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 156,
+                            "line": 123,
                             "message": ""
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 157,
+                            "line": 124,
                             "message": ""
                         },
                         {
@@ -266,7 +266,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 158,
+                            "line": 125,
                             "message": ""
                         },
                         {
@@ -274,7 +274,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 159,
+                            "line": 126,
                             "message": ""
                         },
                         {
@@ -282,71 +282,71 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
+                            "line": 130,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
+                            "line": 131,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 136,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 147,
+                            "message": "Cannot access value for name AppBridge"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
+                            "line": 146,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
+                            "line": 160,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 21,
+                            "durationMicroseconds": 0,
+                            "functionName": "height",
+                            "line": 161,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
                             "line": 162,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 163,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 35,
-                            "durationMicroseconds": 0,
-                            "functionName": "centerIn",
-                            "line": 168,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 192,
-                            "message": "Cannot access value for name AppBridge"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 191,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "width",
-                            "line": 205,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 21,
-                            "durationMicroseconds": 0,
-                            "functionName": "height",
-                            "line": 206,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 207,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 251,
+                            "line": 194,
                             "message": ""
                         },
                         {
@@ -354,7 +354,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 210,
+                            "line": 166,
                             "message": ""
                         },
                         {
@@ -362,7 +362,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 211,
+                            "line": 167,
                             "message": ""
                         },
                         {
@@ -370,7 +370,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 216,
+                            "line": 172,
                             "message": ""
                         },
                         {
@@ -378,7 +378,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 240,
+                            "line": 183,
                             "message": "Cannot access value for name AppBridge"
                         },
                         {
@@ -386,11 +386,11 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 239,
+                            "line": 182,
                             "message": ""
                         }
                     ],
-                    "filePath": "/Users/paulmantz/MorseCodeOverlay/Mode.qml"
+                    "filePath": "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Mode.qml"
                 }
             ],
             "moduleId": "MorseCodeOverlay(appMorseCodeOverlay)"

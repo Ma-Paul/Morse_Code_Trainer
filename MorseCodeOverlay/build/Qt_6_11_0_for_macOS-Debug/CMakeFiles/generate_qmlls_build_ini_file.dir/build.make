@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for generate_qmlls_build_ini_file.
 
@@ -69,11 +69,11 @@ include CMakeFiles/generate_qmlls_build_ini_file.dir/progress.make
 CMakeFiles/generate_qmlls_build_ini_file: .qt/.qmlls.build.ini
 
 .qt/.qmlls.build.ini:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Populating .qmlls.ini file at /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E echo [General] > /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E echo_append docDir= >> /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
-	/Users/paulmantz/Qt/6.11.0/macos/bin/qtpaths --query QT_INSTALL_DOCS >> /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cat /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini.part >> /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Populating .qmlls.ini file at /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E echo [General] > /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E echo_append docDir= >> /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
+	/Users/paulmantz/Qt/6.11.0/macos/bin/qtpaths --query QT_INSTALL_DOCS >> /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cat /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini.part >> /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/.qmlls.build.ini
 
 generate_qmlls_build_ini_file: .qt/.qmlls.build.ini
 generate_qmlls_build_ini_file: CMakeFiles/generate_qmlls_build_ini_file
@@ -89,6 +89,6 @@ CMakeFiles/generate_qmlls_build_ini_file.dir/clean:
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/clean
 
 CMakeFiles/generate_qmlls_build_ini_file.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/generate_qmlls_build_ini_file.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/generate_qmlls_build_ini_file.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/generate_qmlls_build_ini_file.dir/depend
 

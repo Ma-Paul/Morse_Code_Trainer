@@ -10,9 +10,9 @@ Item {
     anchors.fill: parent
     id: root
     Rectangle {
-
         anchors.fill: parent
         Rectangle {
+            color: "#5865F2"
             x:  width / 1.25
             y: height
             width: 100
@@ -33,23 +33,14 @@ Item {
             }
         }
         gradient: Gradient {
-            GradientStop {
-                position: 0.0
-                color: "#000000"
-            }
-            GradientStop {
-                position: 0.25
-                color: "#000000"
-            }
-            GradientStop {
-                position: 1.0
-                color: "#ffffff"
-            }
+            GradientStop { position: 0.0; color: "#131318" }
+            GradientStop { position: 0.5; color: "#1C1D23" }
+            GradientStop { position: 1.0; color: "#292B32" }
         }
         Text {
             text: qsTr("Wie möchtest du spielen?")
             font.pixelSize: 50
-            color: "White"
+            color: "#7E818E"
             y: 3 * height
             x: root.width / 2 - width / 2
             id: frage
@@ -61,6 +52,7 @@ Item {
             x: width / 8
             radius: 20
             Text {
+                color: "#C9CDFB"
                 x: parent.width / 2 - width / 2
                 y: height
                 text: qsTr("Buchstabe")
@@ -75,20 +67,7 @@ Item {
                 color: "white"
                 font.family: "Impact"
             }
-            gradient: Gradient {
-                GradientStop {
-                    position: 0.0
-                    color: "Red"
-                }
-                GradientStop {
-                    position: 0.5
-                    color: "Purple"
-                }
-                GradientStop {
-                    position: 1
-                    color: "Blue"
-                }
-            }
+            color: "#5865F2"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -110,6 +89,7 @@ Item {
             x: width / 8 + width / 4 + width
             radius: 20
             Text {
+                color: "#C9CDFB"
                 x: parent.width / 2 - width / 2
                 y: height
                 text: qsTr("Wort")
@@ -124,20 +104,7 @@ Item {
                 color: "white"
                 font.family: "Impact"
             }
-            gradient: Gradient {
-                GradientStop {
-                    position: 0.0
-                    color: "Red"
-                }
-                GradientStop {
-                    position: 0.5
-                    color: "Purple"
-                }
-                GradientStop {
-                    position: 1
-                    color: "Blue"
-                }
-            }
+            color: "#5865F2"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -159,6 +126,7 @@ Item {
             x: width / 8 + width / 4 + width + width + width / 4
             radius: 20
             Text {
+                color: "#C9CDFB"
                 x: parent.width / 2 - width / 2
                 y: height
                 text: qsTr("Satz")
@@ -173,20 +141,7 @@ Item {
                 color: "white"
                 font.family: "Impact"
             }
-            gradient: Gradient {
-                GradientStop {
-                    position: 0.0
-                    color: "Red"
-                }
-                GradientStop {
-                    position: 0.5
-                    color: "Purple"
-                }
-                GradientStop {
-                    position: 1
-                    color: "Blue"
-                }
-            }
+        color: "#5865F2"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -207,6 +162,7 @@ Item {
             y: frage.y + frage.height + 40
             radius: 20
             Text {
+                color: "#C9CDFB"
                 x: parent.width / 2 - width / 2
                 y: height
                 text: qsTr("Online (Zufall)")
@@ -221,20 +177,7 @@ Item {
                 color: "white"
                 font.family: "Impact"
             }
-            gradient: Gradient {
-                GradientStop {
-                    position: 0.0
-                    color: "Red"
-                }
-                GradientStop {
-                    position: 0.5
-                    color: "Purple"
-                }
-                GradientStop {
-                    position: 1
-                    color: "Blue"
-                }
-            }
+        color: "#5865F2"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {

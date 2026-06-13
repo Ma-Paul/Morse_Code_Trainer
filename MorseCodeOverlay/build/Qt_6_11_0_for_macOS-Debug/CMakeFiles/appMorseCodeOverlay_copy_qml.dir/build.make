@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for appMorseCodeOverlay_copy_qml.
 
@@ -69,14 +69,14 @@ include CMakeFiles/appMorseCodeOverlay_copy_qml.dir/progress.make
 CMakeFiles/appMorseCodeOverlay_copy_qml: .qt/appMorseCodeOverlay_qml.txt
 
 .qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/Main.qml
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/HomePage.qml
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/Inputtype.qml
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/Globalvariables.js
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/Specifytype.qml
-.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/MorseCodeOverlay/Mode.qml
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appMorseCodeOverlay qml sources into build dir"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DFILES_INFO_PATH=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_qml.cmake -P /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Main.qml
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/HomePage.qml
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Inputtype.qml
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Globalvariables.js
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Specifytype.qml
+.qt/appMorseCodeOverlay_qml.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Mode.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appMorseCodeOverlay qml sources into build dir"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DFILES_INFO_PATH=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_qml.cmake -P /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 
 appMorseCodeOverlay_copy_qml: .qt/appMorseCodeOverlay_qml.txt
 appMorseCodeOverlay_copy_qml: CMakeFiles/appMorseCodeOverlay_copy_qml
@@ -92,6 +92,6 @@ CMakeFiles/appMorseCodeOverlay_copy_qml.dir/clean:
 .PHONY : CMakeFiles/appMorseCodeOverlay_copy_qml.dir/clean
 
 CMakeFiles/appMorseCodeOverlay_copy_qml.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_copy_qml.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_copy_qml.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/appMorseCodeOverlay_copy_qml.dir/depend
 

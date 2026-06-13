@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for all_qmllint.
 
@@ -78,6 +78,6 @@ CMakeFiles/all_qmllint.dir/clean:
 .PHONY : CMakeFiles/all_qmllint.dir/clean
 
 CMakeFiles/all_qmllint.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/all_qmllint.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/all_qmllint.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/all_qmllint.dir/depend
 

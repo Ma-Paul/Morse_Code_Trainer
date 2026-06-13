@@ -18,7 +18,7 @@
                             "column": 17,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 30,
+                            "line": 18,
                             "message": ""
                         },
                         {
@@ -26,7 +26,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 31,
+                            "line": 19,
                             "message": ""
                         },
                         {
@@ -34,7 +34,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 37,
+                            "line": 26,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 36,
+                            "line": 25,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 44,
+                            "line": 33,
                             "message": ""
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 45,
+                            "line": 34,
                             "message": ""
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fillMode",
-                            "line": 46,
+                            "line": 35,
                             "message": ""
                         },
                         {
@@ -74,6 +74,14 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
+                            "line": 31,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
                             "line": 42,
                             "message": ""
                         },
@@ -81,16 +89,8 @@
                             "codegenResult": 0,
                             "column": 16,
                             "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 53,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 54,
+                            "line": 43,
                             "message": ""
                         },
                         {
@@ -98,7 +98,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 60,
+                            "line": 49,
                             "message": ""
                         },
                         {
@@ -106,7 +106,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 61,
+                            "line": 50,
                             "message": ""
                         },
                         {
@@ -114,7 +114,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 62,
+                            "line": 51,
                             "message": ""
                         },
                         {
@@ -122,7 +122,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 63,
+                            "line": 52,
                             "message": ""
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 66,
+                            "line": 56,
                             "message": ""
                         },
                         {
@@ -138,7 +138,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 67,
+                            "line": 57,
                             "message": ""
                         },
                         {
@@ -146,7 +146,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 74,
+                            "line": 65,
                             "message": "Could not find property \"x\"."
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 75,
+                            "line": 66,
                             "message": "Could not find property \"y\"."
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 76,
+                            "line": 67,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 77,
+                            "line": 68,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onActivated",
-                            "line": 78,
+                            "line": 69,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "source",
-                            "line": 83,
+                            "line": 74,
                             "message": "Cannot retrieve a non-object type by ID: choose"
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 92,
+                            "line": 83,
                             "message": "Cannot retrieve a non-object type by ID: choose"
                         },
                         {
@@ -202,39 +202,39 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
+                            "line": 84,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 0,
+                            "functionName": "height",
+                            "line": 85,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
+                            "line": 92,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
                             "line": 93,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "height",
-                            "line": 94,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 101,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 102,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 103,
+                            "line": 94,
                             "message": ""
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 104,
+                            "line": 95,
                             "message": ""
                         },
                         {
@@ -250,7 +250,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 107,
+                            "line": 99,
                             "message": ""
                         },
                         {
@@ -258,7 +258,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 108,
+                            "line": 100,
                             "message": ""
                         },
                         {
@@ -266,7 +266,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 115,
+                            "line": 108,
                             "message": "Could not find property \"x\"."
                         },
                         {
@@ -274,7 +274,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 116,
+                            "line": 109,
                             "message": "Could not find property \"y\"."
                         },
                         {
@@ -282,7 +282,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 117,
+                            "line": 110,
                             "message": "Could not find property \"width\"."
                         },
                         {
@@ -290,7 +290,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 118,
+                            "line": 111,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -298,7 +298,7 @@
                             "column": 30,
                             "durationMicroseconds": 0,
                             "functionName": "onActivated",
-                            "line": 119,
+                            "line": 112,
                             "message": "Could not find signal \"activated\"."
                         },
                         {
@@ -306,7 +306,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "source",
-                            "line": 124,
+                            "line": 117,
                             "message": "Cannot retrieve a non-object type by ID: choose2"
                         },
                         {
@@ -314,7 +314,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 133,
+                            "line": 126,
                             "message": "Cannot retrieve a non-object type by ID: choose2"
                         },
                         {
@@ -322,7 +322,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 134,
+                            "line": 127,
                             "message": ""
                         },
                         {
@@ -330,7 +330,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 135,
+                            "line": 128,
                             "message": ""
                         },
                         {
@@ -338,7 +338,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 141,
+                            "line": 134,
                             "message": ""
                         },
                         {
@@ -346,7 +346,7 @@
                             "column": 16,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 142,
+                            "line": 135,
                             "message": ""
                         },
                         {
@@ -354,7 +354,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 143,
+                            "line": 136,
                             "message": ""
                         },
                         {
@@ -362,7 +362,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 144,
+                            "line": 137,
                             "message": ""
                         },
                         {
@@ -370,7 +370,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 150,
+                            "line": 143,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -378,7 +378,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 149,
+                            "line": 142,
                             "message": ""
                         },
                         {
@@ -386,7 +386,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 157,
+                            "line": 150,
                             "message": ""
                         },
                         {
@@ -394,7 +394,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 158,
+                            "line": 151,
                             "message": ""
                         },
                         {
@@ -402,7 +402,7 @@
                             "column": 27,
                             "durationMicroseconds": 0,
                             "functionName": "fillMode",
-                            "line": 159,
+                            "line": 152,
                             "message": ""
                         },
                         {
@@ -410,11 +410,11 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
-                            "line": 155,
+                            "line": 148,
                             "message": ""
                         }
                     ],
-                    "filePath": "/Users/paulmantz/MorseCodeOverlay/Specifytype.qml"
+                    "filePath": "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Specifytype.qml"
                 }
             ],
             "moduleId": "MorseCodeOverlay(appMorseCodeOverlay)"

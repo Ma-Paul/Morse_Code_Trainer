@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for all_aotstats.
 
@@ -67,12 +67,12 @@ include CMakeFiles/all_aotstats.dir/compiler_depend.make
 include CMakeFiles/all_aotstats.dir/progress.make
 
 CMakeFiles/all_aotstats: .rcc/qmlcache/all_aotstats.txt
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cat /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.txt
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cat /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.txt
 
 .rcc/qmlcache/all_aotstats.aotstats: .rcc/qmlcache/module_appMorseCodeOverlay.aotstats
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/all_aotstats.aotstats, .rcc/qmlcache/all_aotstats.txt"
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats aggregate /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstatslist /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstats
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats format /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstats /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/all_aotstats.aotstats, .rcc/qmlcache/all_aotstats.txt"
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats aggregate /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstatslist /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstats
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats format /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.aotstats /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/all_aotstats.txt
 
 .rcc/qmlcache/all_aotstats.txt: .rcc/qmlcache/all_aotstats.aotstats
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/all_aotstats.txt
@@ -92,6 +92,6 @@ CMakeFiles/all_aotstats.dir/clean:
 .PHONY : CMakeFiles/all_aotstats.dir/clean
 
 CMakeFiles/all_aotstats.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/all_aotstats.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/all_aotstats.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/all_aotstats.dir/depend
 

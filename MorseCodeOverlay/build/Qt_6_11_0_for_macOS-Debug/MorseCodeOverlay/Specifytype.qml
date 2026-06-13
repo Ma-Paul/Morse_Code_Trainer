@@ -9,22 +9,10 @@ Item {
     Rectangle {
         anchors.fill: parent
         gradient: Gradient {
-
-            GradientStop {
-                position: 0.0
-                color: "#000000"
-            }
-            GradientStop {
-                position: 0.25
-                color: "#000000"
-            }
-            GradientStop {
-                position: 1.0
-                color: "#ffffff"
-            }
+            GradientStop { position: 0.0; color: "#131318" }
+            GradientStop { position: 0.5; color: "#1C1D23" }
+            GradientStop { position: 1.0; color: "#292B32" }
         }
-
-
 
         Rectangle {
             x:  width / 1.25
@@ -32,6 +20,7 @@ Item {
             width: 100
             height: 75
             radius: 50
+            color: "#5865F2"
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -53,7 +42,7 @@ Item {
             x: root.width / 2 - width / 2
             y: 3 * height
             text: qsTr("Was sind die Einstellungen deiner Knöpfe?")
-            color: "white"
+            color: "#7E818E"
         }
         Rectangle {
             id: links
@@ -62,12 +51,14 @@ Item {
             width: root.width / 3
             height: root.height - frage.y - frage.height * 3
             radius: 20
+            color: "#5865F2"
             Text {
                 x: links.width / 2 - width / 2
                 y: height / 5
                 text: qsTr("Links")
                 font.pixelSize: 60
                 id: textforlinks
+                color: "#C9CDFB"
             }
             ComboBox {
                 id: choose
@@ -86,7 +77,7 @@ Item {
                     ? "short.png"
                     : choose.currentText === "Zeitgesteuert"
                     ? "Time.png"
-                    : "Pause.jpg"
+                    : "Pause.png"
 
                 x: 10
                 y: choose.height * 2
@@ -103,15 +94,17 @@ Item {
             width: root.width / 3
             height: root.height - frage.y - frage.height * 3
             radius: 20
+            color: "#5865F2"
             Text {
                 x: rechts.width / 2 - width / 2
                 y: height / 5
                 text: qsTr("Rechts")
                 font.pixelSize: 60
                 id: textforrechts
+                color: "#C9CDFB"
             }
             ComboBox {
-                id: choose2
+                id:choose2
                 x: parent.width / 2 - width / 2
                 y: textforrechts.height + 10 + textforlinks.y
                 width: rechts.width - 2 * 30
@@ -127,7 +120,7 @@ Item {
                     ? "short.png"
                     : choose2.currentText === "Zeitgesteuert"
                     ? "Time.png"
-                    : "Pause.jpg"
+                    : "Pause.png"
 
                 x: 10
                 y: choose2.height * 2
@@ -142,7 +135,7 @@ Item {
             y: rechts.height / 2 - height / 2 + rechts.y
             width: rechts.x - links.width - links.x - 30
             height: width
-            color: "Blue"
+            color: "#5865F2"
             radius: 20
             id: weiter
             MouseArea {

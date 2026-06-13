@@ -678,11 +678,11 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/include"
+					"path" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/include"
 				},
 				{
 					"backtrace" : 58,
-					"path" : "/Users/paulmantz/MorseCodeOverlay"
+					"path" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay"
 				},
 				{
 					"backtrace" : 59,
@@ -1149,7 +1149,7 @@
 		},
 		{
 			"backtrace" : 91,
-			"path" : "Pause.jpg",
+			"path" : "Pause.png",
 			"sourceGroupIndex" : 3
 		},
 		{

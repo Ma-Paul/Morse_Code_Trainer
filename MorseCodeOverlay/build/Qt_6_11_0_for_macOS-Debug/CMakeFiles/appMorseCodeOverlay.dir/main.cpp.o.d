@@ -1,5 +1,5 @@
 CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: \
-  /Users/paulmantz/MorseCodeOverlay/main.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtGui.framework/Headers/QGuiApplication \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtGui.framework/Headers/qguiapplication.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
@@ -1009,5 +1009,5 @@ CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqmlabstracturlinterceptor.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/QQmlContext \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqmlcontext.h \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QObject

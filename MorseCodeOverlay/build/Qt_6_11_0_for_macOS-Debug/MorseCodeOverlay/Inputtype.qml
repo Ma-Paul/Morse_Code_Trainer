@@ -12,21 +12,12 @@ Page {
         Rectangle {
             anchors.fill: parent
             gradient: Gradient {
-
-                GradientStop {
-                    position: 0.0
-                    color: "#000000"
-                }
-                GradientStop {
-                    position: 0.25
-                    color: "#000000"
-                }
-                GradientStop {
-                    position: 1.0
-                    color: "#ffffff"
-                }
+                GradientStop { position: 0.0; color: "#131318" }
+                GradientStop { position: 0.5; color: "#1C1D23" }
+                GradientStop { position: 1.0; color: "#292B32" }
             }
             Rectangle {
+                color: "#5865F2"
                 x:  width / 1.25
                 y: height
                 width: 100
@@ -57,7 +48,7 @@ Page {
 
                 text: qsTr("Welche Art der Eingabe besitzt du?")
                 font.pixelSize: 50
-                color: "white"
+                color: "#7E818E"
             }
             Rectangle {
                 radius: 20
@@ -66,19 +57,21 @@ Page {
                 //y: frage.y + frage.height + (root.height / 2 - frage.y) - height / 2
                 y: frage.y + frage.height + (root.height - frage.y - frage.height) / 2 - height / 2
                 x: root.width / 4 - width / 2
+                color: "#5865F2"
 
                 Text {
                     x: parent.width / 2 - width / 2
                     y: 1.5 * height
                     text: qsTr("Eine Taste")
                     font.pixelSize: 50
+                    color: "#C9CDFB"
                 }
                 Image {
                     x: parent.width / 2 - width / 2
                     y: 181
                     width: 238
                     height: 238
-                    source: "Single.jpg"
+                    source: "Single.png"
                 }
                 MouseArea {
                     anchors.fill: parent
@@ -96,11 +89,13 @@ Page {
                 height: root.height - frage.x - 20
                 y: frage.y + frage.height + (root.height - frage.y - frage.height) / 2 - height / 2
                 x: root.width / 4 - width / 2 + root.width / 2
+                color: "#5865F2"
                 Text {
                     x: parent.width / 2 - width / 2
                     y: 1.5 * height
                     text: qsTr("Zwei Tasten")
                     font.pixelSize: 50
+                    color: "#C9CDFB"
                 }
                 Image {
 
@@ -109,7 +104,7 @@ Page {
                     height: 238
                     x: parent.width / 2 - width / 2
                     y: 181
-                    source: "Double.jpg"
+                    source: "Double.png"
                 }
                 MouseArea {
                     anchors.fill: parent

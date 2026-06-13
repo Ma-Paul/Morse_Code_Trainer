@@ -1,5 +1,5 @@
-/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp: /Users/paulmantz/MorseCodeOverlay/appbridge.h \
-  /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h \
+/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \

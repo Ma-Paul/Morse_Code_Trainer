@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for appMorseCodeOverlay_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/appMorseCodeOverlay_autogen: appMorseCodeOverlay_autogen/timestamp
 
 appMorseCodeOverlay_autogen/timestamp: /Users/paulmantz/Qt/6.11.0/macos/libexec/moc
 appMorseCodeOverlay_autogen/timestamp: CMakeFiles/appMorseCodeOverlay_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target appMorseCodeOverlay"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/AutogenInfo.json Debug
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target appMorseCodeOverlay"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/AutogenInfo.json Debug
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/timestamp
 
 appMorseCodeOverlay_autogen: CMakeFiles/appMorseCodeOverlay_autogen
 appMorseCodeOverlay_autogen: appMorseCodeOverlay_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/appMorseCodeOverlay_autogen.dir/clean:
 .PHONY : CMakeFiles/appMorseCodeOverlay_autogen.dir/clean
 
 CMakeFiles/appMorseCodeOverlay_autogen.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/appMorseCodeOverlay_autogen.dir/depend
 

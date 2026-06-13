@@ -724,17 +724,6 @@ appMorseCodeOverlay_autogen/timestamp: /Applications/Xcode.app/Contents/Develope
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/limits.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/ptrcheck.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdarg.h \
-  /Users/paulmantz/MorseCodeOverlay/CMakeLists.txt \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.cpp \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
-  .qt/qml_imports/appMorseCodeOverlay_conf.cmake \
-  .qtcreator/cmake-helper/maintenance_tool_provider.cmake \
-  .qtcreator/cmake-helper/package-manager.cmake \
-  .qtcreator/cmake-helper/qtcreator-project.cmake \
-  CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.30.5/CMakeSystem.cmake \
-  appMorseCodeOverlay_autogen/moc_predefs.h \
-  /Users/paulmantz/MorseCodeOverlay/main.cpp \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/q20bit.h \
@@ -1597,7 +1586,18 @@ appMorseCodeOverlay_autogen/timestamp: /Applications/Xcode.app/Contents/Develope
   /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake \
   /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake \
   /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake \
-  /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake
+  /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/CMakeLists.txt \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
+  .qt/qml_imports/appMorseCodeOverlay_conf.cmake \
+  .qtcreator/cmake-helper/maintenance_tool_provider.cmake \
+  .qtcreator/cmake-helper/package-manager.cmake \
+  .qtcreator/cmake-helper/qtcreator-project.cmake \
+  CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.30.5/CMakeSystem.cmake \
+  appMorseCodeOverlay_autogen/moc_predefs.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp
 
 CMakeFiles/appMorseCodeOverlay.dir/appMorseCodeOverlay_autogen/mocs_compilation.cpp.o: appMorseCodeOverlay_autogen/mocs_compilation.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/Availability.h \
@@ -2428,8 +2428,6 @@ CMakeFiles/appMorseCodeOverlay.dir/appMorseCodeOverlay_autogen/mocs_compilation.
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
-  appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QObject \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/q17memory.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/q20algorithm.h \
@@ -2537,9 +2535,11 @@ CMakeFiles/appMorseCodeOverlay.dir/appMorseCodeOverlay_autogen/mocs_compilation.
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qutf8stringview.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qversiontagging.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qxptype_traits.h \
-  /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qyieldcpu.h
+  /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qyieldcpu.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
+  appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp
 
-CMakeFiles/appMorseCodeOverlay.dir/appbridge.cpp.o: /Users/paulmantz/MorseCodeOverlay/appbridge.cpp \
+CMakeFiles/appMorseCodeOverlay.dir/appbridge.cpp.o: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -3404,7 +3404,6 @@ CMakeFiles/appMorseCodeOverlay.dir/appbridge.cpp.o: /Users/paulmantz/MorseCodeOv
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QDebug \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QDir \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QFile \
@@ -3553,7 +3552,8 @@ CMakeFiles/appMorseCodeOverlay.dir/appbridge.cpp.o: /Users/paulmantz/MorseCodeOv
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qversiontagging.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qxptype_traits.h \
-  /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qyieldcpu.h
+  /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qyieldcpu.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h
 
 CMakeFiles/appMorseCodeOverlay.dir/appmorsecodeoverlay_qmltyperegistrations.cpp.o: appmorsecodeoverlay_qmltyperegistrations.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/Availability.h \
@@ -11481,7 +11481,7 @@ CMakeFiles/appMorseCodeOverlay.dir/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqmlexports.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqmlglobal.h
 
-CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: /Users/paulmantz/MorseCodeOverlay/main.cpp \
+CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -12313,7 +12313,6 @@ CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: /Users/paulmantz/MorseCodeOverlay
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdbool.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdint.h \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
   /Users/paulmantz/Qt/6.11.0/macos/include/QtQmlIntegration/qqmlintegration.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QObject \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/q17memory.h \
@@ -12492,7 +12491,8 @@ CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: /Users/paulmantz/MorseCodeOverlay
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqmlregistration.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqml-config.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqmlexports.h \
-  /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqmlglobal.h
+  /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qtqmlglobal.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h
 
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqmlapplicationengine.h:
@@ -13311,9 +13311,9 @@ CMakeFiles/appMorseCodeOverlay.dir/main.cpp.o: /Users/paulmantz/MorseCodeOverlay
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
 
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qtconfiginclude.h:
-
 appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qtconfiginclude.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
 
@@ -13817,6 +13817,22 @@ appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp:
 
 appMorseCodeOverlay_autogen/mocs_compilation.cpp:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_types/_size_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h:
+
+/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp:
+
+.qtcreator/cmake-helper/package-manager.cmake:
+
+/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h:
+
+/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginAdditionalTargetInfo.cmake:
+
+/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/CMakeLists.txt:
+
 .qt/rcc/qrc_appMorseCodeOverlay_raw_qml_0.cpp:
 
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake:
@@ -13838,6 +13854,14 @@ appMorseCodeOverlay_autogen/mocs_compilation.cpp:
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2iosstyleimplpluginAdditionalTargetInfo.cmake:
 
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/traits.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dassetutilspluginAdditionalTargetInfo.cmake:
+
+.qt/qml_imports/appMorseCodeOverlay_conf.cmake:
+
+/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:
 
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake:
 
@@ -14449,12 +14473,6 @@ appMorseCodeOverlay_autogen/mocs_compilation.cpp:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dassetutilspluginConfig.cmake:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/traits.h:
-
-.qt/qml_imports/appMorseCodeOverlay_conf.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dassetutilspluginAdditionalTargetInfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__ranges/subrange.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginTargets.cmake:
@@ -14734,8 +14752,6 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/xlocale/_string.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginConfig.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginAdditionalTargetInfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__ranges/dangling.h:
 
@@ -15181,6 +15197,8 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
 
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
+
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlConfigVersionImpl.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2universalstyleimplpluginAdditionalTargetInfo.cmake:
@@ -15266,6 +15284,10 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__log_hardening_failure:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__math/copysign.h:
 
@@ -15387,51 +15409,15 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qsysinfo.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dspatialaudioAdditionalTargetInfo.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/ctype.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringlist.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringfwd.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter_base.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/wchar.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/inout_ptr.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringbuilder.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstring.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstdlibdetection.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2implpluginConfig.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargetsPrecheck.cmake:
 
@@ -15458,6 +15444,26 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/type_traits:
+
+appMorseCodeOverlay_autogen/moc_predefs.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6TaskTree/Qt6TaskTreeTargetsPrecheck.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__system_error/error_condition.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__math/exponential_functions.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/fill.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6quick3dspatialaudioAdditionalTargetInfo.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h:
 
@@ -15543,44 +15549,6 @@ CMakeFiles/3.30.5/CMakeCXXCompiler.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h:
 
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6TaskTree/Qt6TaskTreeTargetsPrecheck.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__system_error/error_condition.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__math/exponential_functions.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringalgorithms.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/type_traits:
-
-appMorseCodeOverlay_autogen/moc_predefs.h:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickdialogspluginTargets-relwithdebinfo.cmake:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_types/_mach_port_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fma.h:
-
-CMakeFiles/3.30.5/CMakeSystem.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/q20functional.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__undef_macros:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__type_traits/container_traits.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/scan_keyword.h:
-
-/Users/paulmantz/MorseCodeOverlay/appbridge.h:
-
-/Users/paulmantz/MorseCodeOverlay/appbridge.cpp:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/iota.h:
@@ -15647,10 +15615,6 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_types/_size_t.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
@@ -15702,6 +15666,16 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-relwithdebinfo.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_errno_t.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/q20functional.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__undef_macros:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__type_traits/container_traits.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_clock_t.h:
 
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/FindOpenGL.cmake:
 
@@ -15782,6 +15756,14 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2implpluginConfig.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__compare/three_way_comparable.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginTargets-relwithdebinfo.cmake:
 
@@ -15929,6 +15911,14 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6QmlNetworkpluginAdditionalTargetInfo.cmake:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/wchar.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/inout_ptr.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringbuilder.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/find_segment_if.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6particlespluginTargets-relwithdebinfo.cmake:
@@ -15984,8 +15974,6 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qurl.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/exception_guard.h:
-
-/Users/paulmantz/MorseCodeOverlay/main.cpp:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qassert.h:
 
@@ -16463,8 +16451,6 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
 
-.qtcreator/cmake-helper/package-manager.cmake:
-
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/minmax.h:
@@ -16492,6 +16478,10 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/execution:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickdialogspluginTargets-relwithdebinfo.cmake:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qalgorithms.h:
 
@@ -16526,6 +16516,8 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h:
 
@@ -16621,8 +16613,6 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__new/exceptions.h:
 
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/negation.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_types/_ct_rune_t.h:
@@ -16648,6 +16638,12 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/sys/_types/_mach_port_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__math/fma.h:
+
+CMakeFiles/3.30.5/CMakeSystem.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h:
 
@@ -16762,6 +16758,8 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/pad_and_output.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake:
 
@@ -16916,10 +16914,6 @@ CMakeFiles/3.30.5/CMakeSystem.cmake:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stdarg___gnuc_va_list.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex:
-
-.qtcreator/cmake-helper/qtcreator-project.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__algorithm/comp.h:
 
@@ -17231,6 +17225,10 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/assignable.h:
 
+.qtcreator/cmake-helper/qtcreator-project.cmake:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex:
+
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__compare/compare_three_way_result.h:
@@ -17277,6 +17275,10 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countr.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/ctype.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringlist.h:
+
 /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qsize.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
@@ -17294,8 +17296,6 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__algorithm/for_each_n_segment.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h:
-
-/Users/paulmantz/MorseCodeOverlay/CMakeLists.txt:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h:
 
@@ -17318,6 +17318,8 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/check_memory_order.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/scan_keyword.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__fwd/pair.h:
 
@@ -17613,8 +17615,6 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2macosstylepluginAdditionalTargetInfo.cmake:
 
-/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__iterator/static_bounded_iter.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
@@ -17777,10 +17777,6 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/any_of.h:
 
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
-
-/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
-
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/wctype.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/pop_heap.h:
@@ -17813,6 +17809,8 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_xlocale.h:
 
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringconverter.h:
+
 /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickshapesdesignhelperspluginTargetsPrecheck.cmake:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:
@@ -17820,6 +17818,8 @@ appmorsecodeoverlay_qmltyperegistrations.cpp:
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/check_grouping.h:
+
+/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/qstringfwd.h:
 
 /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake:
 

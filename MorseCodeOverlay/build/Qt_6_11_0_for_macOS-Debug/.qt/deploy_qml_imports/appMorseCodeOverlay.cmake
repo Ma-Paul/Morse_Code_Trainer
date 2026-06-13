@@ -9,7 +9,7 @@ endif()
 
 _qt_internal_deploy_qml_imports_for_target(
     ${__qt_opts}
-    IMPORTS_FILE "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_build.cmake"
+    IMPORTS_FILE "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_build.cmake"
     PLUGINS_FOUND __qt_internal_plugins_found
     QML_DIR     "appMorseCodeOverlay.app/Contents/Resources/qml"
     PLUGINS_DIR "appMorseCodeOverlay.app/Contents/PlugIns"

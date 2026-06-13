@@ -14,12 +14,11 @@ Page {
         width: parent.width
         height: parent.height
         gradient: Gradient {
+            GradientStop { position: 0.0; color: "#131318" }
+            GradientStop { position: 0.5; color: "#1C1D23" }
+            GradientStop { position: 1.0; color: "#292B32" }
+        }
 
-                GradientStop { position: 0.0; color: "#7A8B8B" }
-                GradientStop { position: 0.25; color: "#7A8B8B" }
-                GradientStop { position: 1.0; color: "#68838B" }
-
-            }
 
 
 
@@ -30,7 +29,7 @@ Page {
             y: 3 * height
             text: qsTr("Morse Code Trainer")
             font.pixelSize: 50
-            color: "white"
+            color: "#7E818E"
 
 
         }
@@ -41,6 +40,7 @@ Page {
             y: parent.height - (15 + height)
             text: qsTr("Made by Paul M. and Benjamin G. under Supervision of Falko S.")
             font.pixelSize: 12
+            color: "#7E818E"
         }
 
         Rectangle {
@@ -49,7 +49,7 @@ Page {
             y: parent.height / 2 - height / 2
             width: 200
             height: 100
-	    color: "4169E1"                
+            color: "#5865F2"
             radius: 20
             MouseArea {
                 anchors.fill: parent
@@ -61,6 +61,7 @@ Page {
                         y: parent.height / 2 - height / 2
                         text: qsTr("Start")
                         font.pixelSize: 50
+                        color: "#C9CDFB"
                     }
         }
     }

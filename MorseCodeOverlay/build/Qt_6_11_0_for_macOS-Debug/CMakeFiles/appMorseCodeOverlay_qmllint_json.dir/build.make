@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for appMorseCodeOverlay_qmllint_json.
 
@@ -67,14 +67,14 @@ include CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/compiler_depend.make
 include CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/progress.make
 
 CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/Qt/6.11.0/macos/bin/qmllint
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/Main.qml
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/HomePage.qml
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/Inputtype.qml
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/Globalvariables.js
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/Specifytype.qml
-CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/MorseCodeOverlay/Mode.qml
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Main.qml
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/HomePage.qml
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Inputtype.qml
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Globalvariables.js
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Specifytype.qml
+CMakeFiles/appMorseCodeOverlay_qmllint_json: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Mode.qml
 CMakeFiles/appMorseCodeOverlay_qmllint_json: .rcc/qmllint/appMorseCodeOverlay_json.rsp
-	cd /Users/paulmantz/MorseCodeOverlay && /Users/paulmantz/Qt/6.11.0/macos/bin/qmllint @/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmllint/appMorseCodeOverlay_json.rsp
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay && /Users/paulmantz/Qt/6.11.0/macos/bin/qmllint @/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmllint/appMorseCodeOverlay_json.rsp
 
 appMorseCodeOverlay_qmllint_json: CMakeFiles/appMorseCodeOverlay_qmllint_json
 appMorseCodeOverlay_qmllint_json: CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/build.make
@@ -89,6 +89,6 @@ CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/clean:
 .PHONY : CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/clean
 
 CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/appMorseCodeOverlay_qmllint_json.dir/depend
 

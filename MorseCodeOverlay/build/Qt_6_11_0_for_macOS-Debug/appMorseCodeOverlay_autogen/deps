@@ -722,17 +722,6 @@ appMorseCodeOverlay_autogen/timestamp: \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/limits.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/ptrcheck.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdarg.h \
-	/Users/paulmantz/MorseCodeOverlay/CMakeLists.txt \
-	/Users/paulmantz/MorseCodeOverlay/appbridge.cpp \
-	/Users/paulmantz/MorseCodeOverlay/appbridge.h \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_conf.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/package-manager.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
-	/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h \
-	/Users/paulmantz/MorseCodeOverlay/main.cpp \
 	/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
 	/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
 	/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Versions/A/Headers/q20bit.h \
@@ -1595,4 +1584,15 @@ appMorseCodeOverlay_autogen/timestamp: \
 	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake \
 	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake \
 	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/CMakeLists.txt \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_conf.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/package-manager.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h \
+	/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp \
 	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake

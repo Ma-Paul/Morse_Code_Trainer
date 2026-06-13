@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -435,7 +435,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -507,7 +507,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/paulmantz/MorseCodeOverlay"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1059,7 +1059,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1475,7 +1475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug"
 		},
 		{
 			"name" : "MorseCodeOverlay_IS_TOP_LEVEL",
@@ -1499,7 +1499,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/paulmantz/MorseCodeOverlay"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay"
 		},
 		{
 			"name" : "OPENGL_GLU_INCLUDE_DIR",
@@ -1575,7 +1575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper"
+			"value" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",

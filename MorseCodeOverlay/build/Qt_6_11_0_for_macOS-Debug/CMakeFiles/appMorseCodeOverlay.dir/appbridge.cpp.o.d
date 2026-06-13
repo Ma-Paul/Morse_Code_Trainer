@@ -1,6 +1,6 @@
 CMakeFiles/appMorseCodeOverlay.dir/appbridge.cpp.o: \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.cpp \
-  /Users/paulmantz/MorseCodeOverlay/appbridge.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QObject \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qobject.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qobjectdefs.h \

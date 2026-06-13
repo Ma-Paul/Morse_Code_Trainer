@@ -24,12 +24,12 @@ qt_add_qml_module(appMorseCodeOverlay
         QML_FILES Specifytype.qml
 	QML_FILES Mode.qml
     RESOURCES
-        Pause.jpg
+        Pause.png
         Long.png
         short.png
         Time.png
-        Single.jpg
-        Double.jpg
+        Single.png
+        Double.png
 	Nextslide.png
 	Previousslide.png
         RESOURCES main.py

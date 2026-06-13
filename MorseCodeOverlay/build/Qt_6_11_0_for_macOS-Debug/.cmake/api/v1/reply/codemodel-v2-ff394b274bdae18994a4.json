@@ -111,7 +111,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "appMorseCodeOverlay::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-appMorseCodeOverlay-Debug-90d84aa60224d5bc0107.json",
+					"jsonFile" : "target-appMorseCodeOverlay-Debug-a35cdd7cc251b61a6ba9.json",
 					"name" : "appMorseCodeOverlay",
 					"projectIndex" : 0
 				},
@@ -212,8 +212,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
-		"source" : "/Users/paulmantz/MorseCodeOverlay"
+		"build" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
+		"source" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay"
 	},
 	"version" : 
 	{

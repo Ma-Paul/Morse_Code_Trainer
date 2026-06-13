@@ -1,19 +1,19 @@
 {
-	"BUILD_DIR" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/paulmantz/MorseCodeOverlay",
+	"BUILD_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay",
 	"CMAKE_EXECUTABLE" : "/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/paulmantz/MorseCodeOverlay/CMakeLists.txt",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/package-manager.cmake",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/CMakeLists.txt",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/package-manager.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -1159,25 +1159,25 @@
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6qmldirTemplate.cmake.in",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_conf.cmake",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/qml_imports/appMorseCodeOverlay_conf.cmake",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/paulmantz/MorseCodeOverlay",
+	"CMAKE_SOURCE_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/deps",
+	"DEP_FILE" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appMorseCodeOverlay_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/paulmantz/MorseCodeOverlay/appbridge.h",
+			"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.h",
 			"MU",
 			"EWIEGA46WW/moc_appbridge.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -1198,7 +1198,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/Users/paulmantz/MorseCodeOverlay",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework",
 		"/Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers",
@@ -1238,50 +1238,58 @@
 		"-c",
 		"/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_qml_0.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_res_0.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_qmake_MorseCodeOverlay.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Globalvariables_js.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_qmlcache_loader.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp"
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_qml_0.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_res_0.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_qmake_MorseCodeOverlay.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Globalvariables_js.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_qmlcache_loader.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 10,
-	"PARSE_CACHE_FILE" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/Users/paulmantz/Qt/6.11.0/macos/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/paulmantz/MorseCodeOverlay/appbridge.cpp", "MU", null ],
-		[ "/Users/paulmantz/MorseCodeOverlay/main.cpp", "MU", null ]
+		[
+			"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/appbridge.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : 
 	[
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_qml_0.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_res_0.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_qmake_MorseCodeOverlay.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Globalvariables_js.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_qmlcache_loader.cpp",
-		"/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp"
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_qml_0.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_appMorseCodeOverlay_raw_res_0.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qrc_qmake_MorseCodeOverlay.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Globalvariables_js.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_qmlcache_loader.cpp",
+		"/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,

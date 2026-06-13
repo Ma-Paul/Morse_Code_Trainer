@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for module_appMorseCodeOverlay_aotstats_target.
 
@@ -74,75 +74,75 @@ CMakeFiles/module_appMorseCodeOverlay_aotstats_target: .rcc/qmlcache/module_appM
 .rcc/qmlcache/module_appMorseCodeOverlay.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp.aotstats
 .rcc/qmlcache/module_appMorseCodeOverlay.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp.aotstats
 .rcc/qmlcache/module_appMorseCodeOverlay.aotstats: .rcc/qmlcache/module_appMorseCodeOverlay.aotstatslist
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_appMorseCodeOverlay.aotstats"
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats aggregate /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/module_appMorseCodeOverlay.aotstatslist /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/module_appMorseCodeOverlay.aotstats
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating .rcc/qmlcache/module_appMorseCodeOverlay.aotstats"
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlaotstats aggregate /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/module_appMorseCodeOverlay.aotstatslist /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/module_appMorseCodeOverlay.aotstats
 
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: /Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen
-.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: /Users/paulmantz/MorseCodeOverlay/HomePage.qml
+.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/HomePage.qml
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: .qt/rcc/qmake_MorseCodeOverlay.qrc
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_res_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: MorseCodeOverlay/appMorseCodeOverlay.qmltypes
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp: MorseCodeOverlay/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp.aotstats"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/HomePage.qml -I /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp /Users/paulmantz/MorseCodeOverlay/HomePage.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp.aotstats"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/HomePage.qml -I /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/HomePage.qml
 
 .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp.aotstats: .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/appMorseCodeOverlay_HomePage_qml.cpp.aotstats
 
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: /Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen
-.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: /Users/paulmantz/MorseCodeOverlay/Inputtype.qml
+.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Inputtype.qml
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: .qt/rcc/qmake_MorseCodeOverlay.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_res_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: MorseCodeOverlay/appMorseCodeOverlay.qmltypes
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp: MorseCodeOverlay/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp.aotstats"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Inputtype.qml -I /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp /Users/paulmantz/MorseCodeOverlay/Inputtype.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp.aotstats"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Inputtype.qml -I /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Inputtype.qml
 
 .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/appMorseCodeOverlay_Inputtype_qml.cpp.aotstats
 
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: /Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen
-.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: /Users/paulmantz/MorseCodeOverlay/Main.qml
+.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Main.qml
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: .qt/rcc/qmake_MorseCodeOverlay.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_res_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: MorseCodeOverlay/appMorseCodeOverlay.qmltypes
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp: MorseCodeOverlay/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp.aotstats"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Main.qml -I /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp /Users/paulmantz/MorseCodeOverlay/Main.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp.aotstats"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Main.qml -I /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Main.qml
 
 .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/appMorseCodeOverlay_Main_qml.cpp.aotstats
 
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: /Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen
-.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: /Users/paulmantz/MorseCodeOverlay/Mode.qml
+.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Mode.qml
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: .qt/rcc/qmake_MorseCodeOverlay.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_res_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: MorseCodeOverlay/appMorseCodeOverlay.qmltypes
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp: MorseCodeOverlay/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp.aotstats"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Mode.qml -I /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp /Users/paulmantz/MorseCodeOverlay/Mode.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp.aotstats"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Mode.qml -I /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Mode.qml
 
 .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/appMorseCodeOverlay_Mode_qml.cpp.aotstats
 
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: /Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen
-.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: /Users/paulmantz/MorseCodeOverlay/Specifytype.qml
+.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Specifytype.qml
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: .qt/rcc/qmake_MorseCodeOverlay.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: .qt/rcc/appMorseCodeOverlay_raw_res_0.qrc
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: MorseCodeOverlay/appMorseCodeOverlay.qmltypes
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp: MorseCodeOverlay/qmldir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp.aotstats"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
-	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Specifytype.qml -I /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp /Users/paulmantz/MorseCodeOverlay/Specifytype.qml
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp, .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp.aotstats"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E make_directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache
+	/Users/paulmantz/Qt/6.11.0/macos/libexec/qmlcachegen --bare --resource-path /qt/qml/MorseCodeOverlay/Specifytype.qml -I /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug -I /Users/paulmantz/Qt/6.11.0/macos/qml -i /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/qmake_MorseCodeOverlay.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_qml_0.qrc --resource /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/rcc/appMorseCodeOverlay_raw_res_0.qrc --dump-aot-stats "--module-id=MorseCodeOverlay(appMorseCodeOverlay)" -o /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Specifytype.qml
 
 .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp.aotstats: .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate .rcc/qmlcache/appMorseCodeOverlay_Specifytype_qml.cpp.aotstats
@@ -171,6 +171,6 @@ CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/clean:
 .PHONY : CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/clean
 
 CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/module_appMorseCodeOverlay_aotstats_target.dir/depend
 

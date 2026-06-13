@@ -1,25 +1,25 @@
 
 set(target "appMorseCodeOverlay")
-set(working_dir "/Users/paulmantz/MorseCodeOverlay")
+set(working_dir "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay")
 set(src_and_dest_list
-    "/Users/paulmantz/MorseCodeOverlay/Pause.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Pause.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/Long.png"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Long.png"
-    "/Users/paulmantz/MorseCodeOverlay/short.png"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/short.png"
-    "/Users/paulmantz/MorseCodeOverlay/Time.png"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Time.png"
-    "/Users/paulmantz/MorseCodeOverlay/Single.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Single.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/Double.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Double.jpg"
-    "/Users/paulmantz/MorseCodeOverlay/Nextslide.png"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Nextslide.png"
-    "/Users/paulmantz/MorseCodeOverlay/Previousslide.png"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Previousslide.png"
-    "/Users/paulmantz/MorseCodeOverlay/main.py"
-    "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/main.py"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Pause.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Pause.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Long.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Long.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/short.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/short.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Time.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Time.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Single.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Single.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Double.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Double.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Nextslide.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Nextslide.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Previousslide.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/Previousslide.png"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.py"
+    "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/main.py"
 
 )
-set(timestamp_file "/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_res.txt")
+set(timestamp_file "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_res.txt")

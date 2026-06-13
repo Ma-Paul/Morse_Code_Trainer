@@ -1,5 +1,5 @@
 CMakeFiles/appMorseCodeOverlay.dir/appmorsecodeoverlay_qmltyperegistrations.cpp.o: \
-  /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appmorsecodeoverlay_qmltyperegistrations.cpp \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqml.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qqmlprivate.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtQml.framework/Headers/qjsprimitivevalue.h \

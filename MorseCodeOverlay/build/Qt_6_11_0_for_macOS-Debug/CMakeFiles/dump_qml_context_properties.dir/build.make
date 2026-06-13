@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for dump_qml_context_properties.
 
@@ -69,8 +69,8 @@ include CMakeFiles/dump_qml_context_properties.dir/progress.make
 CMakeFiles/dump_qml_context_properties: .qt/contextPropertyDump.ini
 
 .qt/contextPropertyDump.ini: /Users/paulmantz/Qt/6.11.0/macos/bin/qmlcontextpropertydump
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/contextPropertyDump.ini file for qmllint"
-	/Users/paulmantz/Qt/6.11.0/macos/bin/qmlcontextpropertydump --cpp-source-directory /Users/paulmantz/MorseCodeOverlay --build-directory /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/contextPropertyDump.ini file for qmllint"
+	/Users/paulmantz/Qt/6.11.0/macos/bin/qmlcontextpropertydump --cpp-source-directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay --build-directory /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 dump_qml_context_properties: .qt/contextPropertyDump.ini
 dump_qml_context_properties: CMakeFiles/dump_qml_context_properties
@@ -86,6 +86,6 @@ CMakeFiles/dump_qml_context_properties.dir/clean:
 .PHONY : CMakeFiles/dump_qml_context_properties.dir/clean
 
 CMakeFiles/dump_qml_context_properties.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/dump_qml_context_properties.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/dump_qml_context_properties.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dump_qml_context_properties.dir/depend
 

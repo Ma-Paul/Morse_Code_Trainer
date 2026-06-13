@@ -7,14 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/paulmantz/MorseCodeOverlay/CMakeLists.txt"
-  ".qt/info_plist/appMorseCodeOverlay/Info.plist"
-  ".qt/qml_imports/appMorseCodeOverlay_conf.cmake"
-  ".qtcreator/cmake-helper/maintenance_tool_provider.cmake"
-  ".qtcreator/cmake-helper/package-manager.cmake"
-  ".qtcreator/cmake-helper/qtcreator-project.cmake"
-  "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.5/CMakeSystem.cmake"
   "/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/FindWrapAtomic.cmake"
   "/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake"
   "/Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6/Qt6Config.cmake"
@@ -772,6 +764,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake"
   "/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake"
   "/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake"
+  "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/CMakeLists.txt"
+  ".qt/info_plist/appMorseCodeOverlay/Info.plist"
+  ".qt/qml_imports/appMorseCodeOverlay_conf.cmake"
+  ".qtcreator/cmake-helper/maintenance_tool_provider.cmake"
+  ".qtcreator/cmake-helper/package-manager.cmake"
+  ".qtcreator/cmake-helper/qtcreator-project.cmake"
+  "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.5/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

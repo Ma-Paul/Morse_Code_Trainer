@@ -53,10 +53,10 @@ RM = /Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/paulmantz/MorseCodeOverlay
+CMAKE_SOURCE_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
+CMAKE_BINARY_DIR = /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug
 
 # Utility rule file for appMorseCodeOverlay_copy_res.
 
@@ -69,17 +69,17 @@ include CMakeFiles/appMorseCodeOverlay_copy_res.dir/progress.make
 CMakeFiles/appMorseCodeOverlay_copy_res: .qt/appMorseCodeOverlay_res.txt
 
 .qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Pause.jpg
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Long.png
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/short.png
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Time.png
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Single.jpg
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Double.jpg
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Nextslide.png
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/Previousslide.png
-.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/MorseCodeOverlay/main.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appMorseCodeOverlay qml resources into build dir"
-	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DFILES_INFO_PATH=/Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_res.cmake -P /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Pause.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Long.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/short.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Time.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Single.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Double.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Nextslide.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Previousslide.png
+.qt/appMorseCodeOverlay_res.txt: /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/main.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying appMorseCodeOverlay qml resources into build dir"
+	/Users/paulmantz/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DFILES_INFO_PATH=/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/.qt/appMorseCodeOverlay_res.cmake -P /Users/paulmantz/Qt/6.11.0/macos/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
 
 appMorseCodeOverlay_copy_res: .qt/appMorseCodeOverlay_res.txt
 appMorseCodeOverlay_copy_res: CMakeFiles/appMorseCodeOverlay_copy_res
@@ -95,6 +95,6 @@ CMakeFiles/appMorseCodeOverlay_copy_res.dir/clean:
 .PHONY : CMakeFiles/appMorseCodeOverlay_copy_res.dir/clean
 
 CMakeFiles/appMorseCodeOverlay_copy_res.dir/depend:
-	cd /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_copy_res.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/CMakeFiles/appMorseCodeOverlay_copy_res.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/appMorseCodeOverlay_copy_res.dir/depend
 

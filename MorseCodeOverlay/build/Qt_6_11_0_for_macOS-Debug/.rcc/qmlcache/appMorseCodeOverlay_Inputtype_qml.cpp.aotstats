@@ -34,7 +34,7 @@
                             "column": 21,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 30,
+                            "line": 21,
                             "message": ""
                         },
                         {
@@ -42,7 +42,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 31,
+                            "line": 22,
                             "message": ""
                         },
                         {
@@ -50,7 +50,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 37,
+                            "line": 28,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -58,7 +58,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 36,
+                            "line": 27,
                             "message": ""
                         },
                         {
@@ -66,7 +66,7 @@
                             "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 48,
+                            "line": 39,
                             "message": ""
                         },
                         {
@@ -74,7 +74,7 @@
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 49,
+                            "line": 40,
                             "message": ""
                         },
                         {
@@ -82,7 +82,7 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "fillMode",
-                            "line": 50,
+                            "line": 41,
                             "message": ""
                         },
                         {
@@ -90,6 +90,14 @@
                             "column": 39,
                             "durationMicroseconds": 0,
                             "functionName": "centerIn",
+                            "line": 37,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
                             "line": 46,
                             "message": ""
                         },
@@ -97,72 +105,64 @@
                             "codegenResult": 0,
                             "column": 20,
                             "durationMicroseconds": 0,
-                            "functionName": "x",
+                            "functionName": "y",
+                            "line": 47,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "width",
                             "line": 55,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 20,
+                            "column": 25,
                             "durationMicroseconds": 0,
-                            "functionName": "y",
+                            "functionName": "height",
                             "line": 56,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
+                            "line": 58,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 0,
+                            "functionName": "x",
+                            "line": 59,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "width",
+                            "functionName": "x",
+                            "line": 63,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 0,
+                            "functionName": "y",
                             "line": 64,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 25,
-                            "durationMicroseconds": 0,
-                            "functionName": "height",
-                            "line": 65,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 67,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 68,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 71,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "y",
-                            "line": 72,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 0,
-                            "functionName": "x",
-                            "line": 77,
+                            "line": 70,
                             "message": ""
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 85,
+                            "line": 78,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -178,7 +178,7 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 84,
+                            "line": 77,
                             "message": ""
                         },
                         {
@@ -186,7 +186,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "width",
-                            "line": 95,
+                            "line": 88,
                             "message": ""
                         },
                         {
@@ -194,7 +194,7 @@
                             "column": 25,
                             "durationMicroseconds": 0,
                             "functionName": "height",
-                            "line": 96,
+                            "line": 89,
                             "message": ""
                         },
                         {
@@ -202,7 +202,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 97,
+                            "line": 90,
                             "message": ""
                         },
                         {
@@ -210,7 +210,7 @@
                             "column": 20,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 98,
+                            "line": 91,
                             "message": ""
                         },
                         {
@@ -218,7 +218,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 100,
+                            "line": 94,
                             "message": ""
                         },
                         {
@@ -226,7 +226,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "y",
-                            "line": 101,
+                            "line": 95,
                             "message": ""
                         },
                         {
@@ -234,7 +234,7 @@
                             "column": 24,
                             "durationMicroseconds": 0,
                             "functionName": "x",
-                            "line": 110,
+                            "line": 105,
                             "message": ""
                         },
                         {
@@ -242,7 +242,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 116,
+                            "line": 111,
                             "message": "Cannot access value for name stackView"
                         },
                         {
@@ -250,11 +250,11 @@
                             "column": 35,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 115,
+                            "line": 110,
                             "message": ""
                         }
                     ],
-                    "filePath": "/Users/paulmantz/MorseCodeOverlay/Inputtype.qml"
+                    "filePath": "/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/Inputtype.qml"
                 }
             ],
             "moduleId": "MorseCodeOverlay(appMorseCodeOverlay)"

@@ -1,7 +1,7 @@
 CMakeFiles/appMorseCodeOverlay.dir/appMorseCodeOverlay_autogen/mocs_compilation.cpp.o: \
-  /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/mocs_compilation.cpp \
-  /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp \
-  /Users/paulmantz/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/../../../../appbridge.h \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/mocs_compilation.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/moc_appbridge.cpp \
+  /Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/appMorseCodeOverlay_autogen/EWIEGA46WW/../../../../appbridge.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/QObject \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qobject.h \
   /Users/paulmantz/Qt/6.11.0/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
