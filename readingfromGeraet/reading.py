@@ -1,23 +1,26 @@
 from gpiozero import Button
 
-from time import time, sleep
+import time
+from time import sleep
 
 # Button connected between GPIO 17 and GND
+# 23
 
-button = Button(17)
-
-last_change_time = time()
+button = Button(17, bounce_time=0.05)
+button2 = Button(23)
+last_change_time = time.perf_counter()
 
 pressed_durations = []
 
 not_pressed_durations = []
 
-
+def checkforinputgeraet():
+    return button2.pressed()
 def button_pressed():
 
     global last_change_time
 
-    now = time()
+    now = time.perf_counter()
 
     # The button was not pressed before this event
 
@@ -25,7 +28,7 @@ def button_pressed():
 
     not_pressed_durations.append(not_pressed_time)
 
-    print(f"Button was not pressed for {not_pressed_time:.2f} seconds")
+    print(f"Button was not pressed for {not_pressed_time:.9f} seconds")
 
     last_change_time = now
 
@@ -34,7 +37,7 @@ def button_released():
 
     global last_change_time
 
-    now = time()
+    now = time.perf_counter()
 
     # The button was pressed before this event
 
@@ -55,4 +58,4 @@ print("Waiting for button activity...")
 
 while True:
 
-    sleep(0.1)
+    sleep(0.001)
