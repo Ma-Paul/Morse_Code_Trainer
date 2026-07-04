@@ -6,7 +6,7 @@ from time import time, sleep
 # Dah = 0.20 < time < 0.22
 # Button connected between GPIO 17 and GND
 server = socket.socket()
-server.bind(("localhost", 5000))
+server.bind(("localhost", 2345))
 server.listen(1)
 conn, addr = server.accept()
 print(f"Connected by {addr}")
@@ -15,7 +15,7 @@ print(f"Connected by {addr}")
 def button_tracker():
     global conn
     zeichen = ""
-    button = Button(17)
+    button = Button(17, bounce_time=0.01)
     last_change_time = time()
 
     pressed_durations = []
@@ -24,7 +24,7 @@ def button_tracker():
     previouslengthn = 0
 
     def button_pressed():
-        global last_change_time
+        nonlocal last_change_time
         now = time()
         # The button was not pressed before this event
         not_pressed_time = now - last_change_time
@@ -33,7 +33,7 @@ def button_tracker():
         last_change_time = now
 
     def button_released():
-        global last_change_time
+        nonlocal last_change_time
         now = time()
         # The button was pressed before this event
         pressed_time = now - last_change_time
@@ -49,6 +49,7 @@ def button_tracker():
         if len(pressed_durations) != previouslengthp:
             if 0.06 < pressed_durations[-1] < 0.08:
                 zeichen += "."
+                
             elif 0.20 < pressed_durations[-1] < 0.22:
                 zeichen += "_"
             previouslengthp = len(pressed_durations)
@@ -62,3 +63,4 @@ def button_tracker():
                 conn.sendall(zeichen.encode())
                 zeichen = ""
             previouslengthn = len(not_pressed_durations)
+button_tracker()
