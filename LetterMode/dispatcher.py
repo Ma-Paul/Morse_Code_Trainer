@@ -15,11 +15,3 @@ class EventDispatcher:
 
 
 
-def my_listener(data):
-    print(data)
-
-dispatcher = EventDispatcher()
-dispatcher2 = EventDispatcher()
-dispatcher2.add_listener(my_listener)
-dispatcher.add_listener(my_listener)
-dispatcher.trigger_event(input())

@@ -8,7 +8,6 @@ def Wordmode(inputascii):
         d = json.load(f)
     #    word = random.choice(d)
     word = np.random.choice(d["words"])
-    status = False
     print(word)
     start = time.time()
     need = 0
