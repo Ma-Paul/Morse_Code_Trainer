@@ -54,7 +54,8 @@ Page {
                 model: [qsTr("Links"), qsTr("Rechts")]
                 delegate: Rectangle {
                     required property int index
-                    required property string modelData
+		    required property string modelData
+		    property int sideIndex: index
                     width: Math.min(430, (root.width - 190) / 2)
                     height: Math.min(570, root.height - 245)
                     radius: 30
@@ -78,18 +79,29 @@ Page {
                             id: chooser
                             width: parent.width
                             height: 48
-                            model: ["Pause", "Lang", "Kurz", "Zeitgesteuert"]
                             font.pixelSize: 17
-                            onActivated: {
-                                if (index === 0)
-                                    Globals.lefttype = currentText
-                                else
-                                    Globals.righttype = currentText
-                            }
-                            Component.onCompleted: {
-                                if (index === 0) Globals.lefttype = currentText
-                                else Globals.righttype = currentText
-                            }
+			    model: [
+				qsTr("Pause"),
+				qsTr("Lang"),
+				qsTr("Kurz"),
+				qsTr("Zeitgesteuert")
+
+			    ]
+			    onActivated: function(choiceIndex) {
+
+				const selectedValue = chooser.textAt(choiceIndex)
+				if (sideIndex === 0)
+				    Globals.setLefttype(selectedValue)
+				else
+				    Globals.setRighttype(selectedValue)
+
+    }
+			    Component.onCompleted: {
+				if (sideIndex === 0)
+				    Globals.setLefttype(currentText)
+				else
+				    Globals.setRighttype(currentText)
+			    }
                         }
 
                         Rectangle {

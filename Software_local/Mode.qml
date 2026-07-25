@@ -6,10 +6,27 @@ Page {
     id: root
 
     function selectMode(value) {
-        Globals.mode = value
-        AppBridge.saveSettings(Globals.eingabeart, Globals.lefttype, Globals.righttype, Globals.mode)
-    }
+    Globals.setMode(value)
 
+    AppBridge.saveSettings(
+        Globals.eingabeart,
+        Globals.lefttype,
+        Globals.righttype,
+        Globals.mode
+    )
+
+    if (value === "Letter") {
+        stackView.push("LetterMode.qml", {
+            showMorseCode: Globals.showLetterMorse
+        })
+    } else if (value === "Word") {
+        console.log("Word mode is not implemented yet")
+    } else if (value === "Sentence") {
+        console.log("Sentence mode is not implemented yet")
+    } else if (value === "Online") {
+        console.log("Online mode is not implemented yet")
+    }
+}
     background: Rectangle {
         color: "#F5F5F7"
         gradient: Gradient {
