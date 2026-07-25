@@ -1,6 +1,7 @@
 import json
 import sys
 from pathlib import Path
+from development import DevelopmentMode
 
 from PySide6.QtCore import QObject, QStandardPaths, Slot
 from PySide6.QtGui import QGuiApplication
@@ -11,7 +12,9 @@ from Letter import LetterTrainer
 
 class AppBridge(QObject):
     @Slot(str, str, str, str)
-    def saveSettings(self, eingabeart: str, lefttype: str, righttype: str, mode: str) -> None:
+    def saveSettings(
+        self, eingabeart: str, lefttype: str, righttype: str, mode: str
+    ) -> None:
         data = {
             "eingabeart": eingabeart,
             "lefttype": lefttype,
@@ -32,10 +35,13 @@ class AppBridge(QObject):
                 json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
             )
         except OSError as error:
-            print(f"Could not save settings to {settings_file}: {error}", file=sys.stderr)
+            print(
+                f"Could not save settings to {settings_file}: {error}", file=sys.stderr
+            )
 
 
 def main() -> int:
+    development_mode = DevelopmentMode()
     app = QGuiApplication(sys.argv)
     app.setOrganizationName("MorseCodeOverlay")
     app.setApplicationName("MorseCodeTrainer")
@@ -46,6 +52,7 @@ def main() -> int:
 
     engine.rootContext().setContextProperty("AppBridge", bridge)
     engine.rootContext().setContextProperty("LetterTrainer", letter_trainer)
+    engine.rootContext().setContextProperty("DevelopmentMode", development_mode)
 
     main_qml = Path(__file__).resolve().parent / "Main.qml"
     engine.load(main_qml.as_uri())

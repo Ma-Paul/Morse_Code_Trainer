@@ -1,19 +1,19 @@
 .pragma library
 
-// Input configuration
-var eingabeart = ""
-var lefttype = "Dit"
-var righttype = "Dah"
+// "1" = one button
+// "2" = two buttons
+var eingabeart = "1"
 
-// Selected training mode
-var mode = "letter"
+// Two-button configuration:
+// "Pause", "Lang", "Kurz", "Zeitgesteuert"
+var lefttype = "Zeitgesteuert"
+var righttype = "Zeitgesteuert"
 
-// Letter-mode settings
+var mode = "Letter"
+
+// Show the target Morse code during training
 var showLetterMorse = true
 
-
-// Setter functions are required because QML must not write directly
-// to properties of a JavaScript library import.
 
 function setEingabeart(value) {
     eingabeart = value
@@ -33,38 +33,4 @@ function setMode(value) {
 
 function setShowLetterMorse(value) {
     showLetterMorse = value
-}
-
-
-// Optional getters
-
-function getEingabeart() {
-    return eingabeart
-}
-
-function getLefttype() {
-    return lefttype
-}
-
-function getRighttype() {
-    return righttype
-}
-
-function getMode() {
-    return mode
-}
-
-function getShowLetterMorse() {
-    return showLetterMorse
-}
-
-
-// Restore default values
-
-function reset() {
-    eingabeart = ""
-    lefttype = "Dit"
-    righttype = "Dah"
-    mode = "letter"
-    showLetterMorse = true
 }

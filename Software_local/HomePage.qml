@@ -5,6 +5,54 @@ Page {
     id: root
     title: "HomePage"
 
+    Rectangle {
+    id: developmentModeNotice
+
+    anchors.left: parent.left
+    anchors.bottom: parent.bottom
+    anchors.leftMargin: 22
+    anchors.bottomMargin: 18
+
+    visible: DevelopmentMode.enabled
+
+    width: developmentModeText.width + 28
+    height: 34
+    radius: 17
+
+    color: "#FFF4CE"
+    border.color: "#E6C65C"
+    border.width: 1
+
+    opacity: visible ? 1.0 : 0.0
+
+    Behavior on opacity {
+        NumberAnimation {
+            duration: 180
+        }
+    }
+
+    Row {
+        anchors.centerIn: parent
+        spacing: 8
+
+        Rectangle {
+            width: 8
+            height: 8
+            radius: 4
+            color: "#E5A900"
+        }
+
+        Text {
+            id: developmentModeText
+
+            text: qsTr("In development mode · F10 to exit")
+            color: "#5C4A00"
+            font.family: "SF Pro Text"
+            font.pixelSize: 13
+            font.weight: Font.Medium
+        }
+    }
+}
     background: Rectangle {
         color: "#F5F5F7"
         gradient: Gradient {
@@ -12,7 +60,14 @@ Page {
             GradientStop { position: 1.0; color: "#EEF1F5" }
         }
     }
+    Shortcut {
+	sequence: "F10"
+	context: Qt.ApplicationShortcut
 
+	onActivated: {
+	    DevelopmentMode.toggle()
+	}
+    }
     Column {
         anchors.centerIn: parent
         spacing: 32
