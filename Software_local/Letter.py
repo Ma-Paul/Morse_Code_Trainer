@@ -55,11 +55,15 @@ class LetterTrainer(QObject):
     morseChanged = Signal()
     inputChanged = Signal()
     runningChanged = Signal()
+    mistakeDetailsChanged = Signal()
 
-    correct = Signal(float)
+    correct = Signal(
+        float,
+        arguments=["elapsedSeconds"],
+    )
 
-    # entered code, expected code, explanation
-    mistake = Signal(str, str, str)
+    # Entered code, expected code, explanation
+    mistake = Signal()
 
     def __init__(
         self,
@@ -74,6 +78,9 @@ class LetterTrainer(QObject):
         self._input = ""
         self._running = False
         self._started_at = 0.0
+        self._last_mistake_entered = ""
+        self._last_mistake_expected = ""
+        self._last_mistake_explanation = ""
 
         self._input_type = "1"
         self._left_type = "Zeitgesteuert"
@@ -114,6 +121,18 @@ class LetterTrainer(QObject):
     @Property(bool, notify=runningChanged)
     def running(self) -> bool:
         return self._running
+
+    @Property(str, notify=mistakeDetailsChanged)
+    def lastMistakeEntered(self) -> str:
+        return self._last_mistake_entered
+
+    @Property(str, notify=mistakeDetailsChanged)
+    def lastMistakeExpected(self) -> str:
+        return self._last_mistake_expected
+
+    @Property(str, notify=mistakeDetailsChanged)
+    def lastMistakeExplanation(self) -> str:
+        return self._last_mistake_explanation
 
     # ------------------------------------------------------------------
     # Configuration
@@ -348,18 +367,23 @@ class LetterTrainer(QObject):
         self,
         explanation: str,
     ) -> None:
-        entered = self._input
-        expected = self.morse
+        self._last_mistake_entered = self._input
+        self._last_mistake_expected = self.morse
+        self._last_mistake_explanation = explanation
+
+        print(
+            "Emitting mistake:",
+            f"entered={self._last_mistake_entered!r},",
+            f"expected={self._last_mistake_expected!r},",
+            f"explanation={self._last_mistake_explanation!r}",
+        )
 
         self._running = False
         self._pressed_at.clear()
-        self.runningChanged.emit()
 
-        self.mistake.emit(
-            entered,
-            expected,
-            explanation,
-        )
+        self.mistakeDetailsChanged.emit()
+        self.runningChanged.emit()
+        self.mistake.emit()
 
     @staticmethod
     def _normalize_symbol(

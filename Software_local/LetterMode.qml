@@ -629,27 +629,27 @@ Dialog {
                         font.pixelSize: 15
                     }
 
+		    Text {
+			width: parent.width
+
+			text: root.wrongEntered.length > 0
+			      ? root.displayCode(root.wrongEntered)
+			      : qsTr("keine Eingabe")
+
+			color: "#FF3B30"
+			font.pixelSize: 24
+			font.weight: Font.DemiBold
+			font.letterSpacing: 4
+
+			wrapMode: Text.WrapAnywhere
+		    }
+
                     Text {
                         width: parent.width
 
-                        text: root.wrongEntered.length > 0
-                              ? root.displayCode(root.wrongEntered)
-                              : qsTr("keine Eingabe")
-
-                        color: "#FF3B30"
-                        font.pixelSize: 24
-                        font.weight: Font.DemiBold
-                        font.letterSpacing: 4
-
-                        wrapMode: Text.WrapAnywhere
-                    }
-
-
-                    Text {
-                        width: parent.width
-
-                        text: root.displayCode(root.wrongExpected)
-
+			text: root.displayCode(
+			    LetterTrainer.lastMistakeExpected
+			)
                         color: "#34C759"
                         font.pixelSize: 24
                         font.weight: Font.DemiBold
@@ -683,23 +683,30 @@ Dialog {
     }
 }
     Connections {
-        target: LetterTrainer
+	target: LetterTrainer
 
-        function onCorrect(elapsedSeconds) {
-            root.resultTime = elapsedSeconds
-            correctDialog.open()
-        }
+	function onCorrect(elapsedSeconds) {
+	    console.log(
+		"Correct signal:",
+		elapsedSeconds
+	    )
 
-        function onMistake(
-            entered,
-            expected,
-            explanation
-        ) {
-            root.wrongEntered = entered
-            root.wrongExpected = expected
-            root.wrongExplanation = explanation
+	    root.resultTime = Number(elapsedSeconds)
+	    correctDialog.open()
+	}
 
-            mistakeDialog.open()
-        }
+	function onMistake() {
+	    root.wrongExplanation =
+		LetterTrainer.lastMistakeExplanation
+
+	    mistakeDialog.open()
+
+	    enteredCodeText.text =
+		LetterTrainer.lastMistakeEntered.length > 0
+		? root.displayCode(
+		      LetterTrainer.lastMistakeEntered
+		  )
+		: qsTr("keine Eingabe")
+	}
     }
 }
