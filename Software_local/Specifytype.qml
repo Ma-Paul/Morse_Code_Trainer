@@ -274,13 +274,13 @@ Page {
                 color: "white"
                 font.pixelSize: 20
                 font.weight: Font.DemiBold
+		y: 8
             }
 
             Text {
                 text: "›"
                 color: "white"
                 font.pixelSize: 31
-                y: -2
             }
         }
 

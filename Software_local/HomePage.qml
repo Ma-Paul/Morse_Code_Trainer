@@ -116,6 +116,7 @@ Page {
                     font.family: "SF Pro Display"
                     font.pixelSize: 34
                     font.weight: Font.DemiBold
+		    y: 8
                 }
 
                 Text {
@@ -123,7 +124,6 @@ Page {
                     color: "white"
                     font.family: "SF Pro Display"
                     font.pixelSize: 46
-                    y: -3
                 }
             }
 
