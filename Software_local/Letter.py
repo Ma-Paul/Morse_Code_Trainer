@@ -8,35 +8,8 @@ from PySide6.QtCore import QObject, Property, Signal, Slot
 try:
     from gpiozero import Button
 except ImportError:
+    # Normal on macOS and Windows.
     Button = None
-
-
-# ============================================================
-# GPIO CONFIGURATION
-# ============================================================
-#
-# Enter the BCM GPIO numbers here.
-#
-# Example:
-# GPIO 17 means BCM GPIO17, physical header pin 11.
-#
-# For a one-button input, SINGLE_BUTTON_PIN is used.
-#
-# For a two-button input:
-# LEFT_BUTTON_PIN and RIGHT_BUTTON_PIN are used.
-#
-# ============================================================
-
-SINGLE_BUTTON_PIN = 17  # TODO: replace with the correct BCM pin
-LEFT_BUTTON_PIN = 17  # TODO: replace with the correct BCM pin
-RIGHT_BUTTON_PIN = 27  # TODO: replace with the correct BCM pin
-
-
-# Maximum press duration that is interpreted as a short symbol.
-SHORT_PRESS_LIMIT = 0.22
-
-# A pause longer than this finishes the current letter.
-LETTER_PAUSE_TIME = 0.65
 
 
 MORSE_TO_LETTER = {
@@ -72,6 +45,12 @@ LETTER_TO_MORSE = {letter: code for code, letter in MORSE_TO_LETTER.items()}
 
 
 class LetterTrainer(QObject):
+    """
+    Morse letter trainer.
+
+    Both GPIO hardware and keyboard simulation use the same input pipeline.
+    """
+
     letterChanged = Signal()
     morseChanged = Signal()
     inputChanged = Signal()
@@ -84,6 +63,9 @@ class LetterTrainer(QObject):
 
     def __init__(
         self,
+        single_pin: int = 17,
+        left_pin: int = 17,
+        right_pin: int = 27,
         parent: Optional[QObject] = None,
     ) -> None:
         super().__init__(parent)
@@ -97,19 +79,22 @@ class LetterTrainer(QObject):
         self._left_type = "Zeitgesteuert"
         self._right_type = "Zeitgesteuert"
 
+        # Time at which each simulated or physical button was pressed.
+        self._pressed_at: dict[str, float] = {}
+
         self._single_button = None
         self._left_button = None
         self._right_button = None
 
-        self._press_started = {
-            "single": 0.0,
-            "left": 0.0,
-            "right": 0.0,
-        }
+        self._single_pin = single_pin
+        self._left_pin = left_pin
+        self._right_pin = right_pin
 
-    # --------------------------------------------------------
+        self._setup_gpio()
+
+    # ------------------------------------------------------------------
     # QML properties
-    # --------------------------------------------------------
+    # ------------------------------------------------------------------
 
     @Property(str, notify=letterChanged)
     def letter(self) -> str:
@@ -130,9 +115,9 @@ class LetterTrainer(QObject):
     def running(self) -> bool:
         return self._running
 
-    # --------------------------------------------------------
+    # ------------------------------------------------------------------
     # Configuration
-    # --------------------------------------------------------
+    # ------------------------------------------------------------------
 
     @Slot(str, str, str)
     def configureInput(
@@ -141,195 +126,198 @@ class LetterTrainer(QObject):
         left_type: str,
         right_type: str,
     ) -> None:
-        self._input_type = input_type.strip()
-        self._left_type = left_type.strip()
-        self._right_type = right_type.strip()
+        """
+        Configure the currently selected input device.
 
-        self._close_buttons()
+        input_type:
+            "1" = one button
+            "2" = two buttons
 
-        if Button is None:
-            print("gpiozero is unavailable. " "Keyboard input can still be used.")
-            return
+        button functions:
+            "Kurz"
+            "Lang"
+            "Zeitgesteuert"
+            "Pause"
+        """
 
-        try:
-            if self._input_type == "2":
-                self._configure_two_buttons()
-            else:
-                self._configure_single_button()
+        self._input_type = str(input_type or "1")
+        self._left_type = left_type or "Zeitgesteuert"
+        self._right_type = right_type or "Zeitgesteuert"
 
-        except Exception as error:
-            print(f"GPIO input could not be configured: {error}")
-            self._close_buttons()
-
-    def _configure_single_button(self) -> None:
-        print(f"Configuring one-button input on BCM GPIO " f"{SINGLE_BUTTON_PIN}")
-
-        self._single_button = Button(
-            SINGLE_BUTTON_PIN,
-            pull_up=True,
-            bounce_time=0.01,
-        )
-
-        self._single_button.when_pressed = lambda: self._button_pressed("single")
-
-        self._single_button.when_released = lambda: self._button_released(
-            "single",
-            "Zeitgesteuert",
-        )
-
-    def _configure_two_buttons(self) -> None:
         print(
-            f"Configuring two-button input: "
-            f"left BCM GPIO {LEFT_BUTTON_PIN}, "
-            f"right BCM GPIO {RIGHT_BUTTON_PIN}"
+            "Input configured:",
+            f"type={self._input_type},",
+            f"left={self._left_type},",
+            f"right={self._right_type}",
         )
 
-        self._left_button = Button(
-            LEFT_BUTTON_PIN,
-            pull_up=True,
-            bounce_time=0.01,
-        )
-
-        self._right_button = Button(
-            RIGHT_BUTTON_PIN,
-            pull_up=True,
-            bounce_time=0.01,
-        )
-
-        self._left_button.when_pressed = lambda: self._button_pressed("left")
-
-        self._left_button.when_released = lambda: self._button_released(
-            "left",
-            self._left_type,
-        )
-
-        self._right_button.when_pressed = lambda: self._button_pressed("right")
-
-        self._right_button.when_released = lambda: self._button_released(
-            "right",
-            self._right_type,
-        )
-
-    def _close_buttons(self) -> None:
-        for button_name in (
-            "_single_button",
-            "_left_button",
-            "_right_button",
-        ):
-            button = getattr(self, button_name)
-
-            if button is not None:
-                try:
-                    button.close()
-                except Exception:
-                    pass
-
-                setattr(self, button_name, None)
-
-    # --------------------------------------------------------
+    # ------------------------------------------------------------------
     # Training control
-    # --------------------------------------------------------
+    # ------------------------------------------------------------------
 
     @Slot(str)
     def startLetter(self, letter: str) -> None:
         normalized = letter[:1].lower()
 
         if normalized not in LETTER_TO_MORSE:
+            print(f"Unknown training letter: {letter!r}")
             return
 
         self._letter = normalized
         self._input = ""
         self._running = True
         self._started_at = time.monotonic()
+        self._pressed_at.clear()
 
         self.letterChanged.emit()
         self.morseChanged.emit()
         self.inputChanged.emit()
         self.runningChanged.emit()
 
+        print(f"New letter: {self._letter.upper()} " f"({self.morse})")
+
     @Slot()
     def stop(self) -> None:
+        self._pressed_at.clear()
+
         if self._running:
             self._running = False
             self.runningChanged.emit()
 
-    @Slot()
-    def shutdown(self) -> None:
-        self.stop()
-        self._close_buttons()
-
-    # --------------------------------------------------------
-    # Keyboard testing
-    # --------------------------------------------------------
-
     @Slot(str)
     def submitSymbol(self, symbol: str) -> None:
-        if symbol == ".":
-            self._append_symbol(".")
+        """
+        Direct symbol input, useful for testing.
+        """
 
-        elif symbol in ("_", "-"):
-            self._append_symbol("_")
+        normalized = self._normalize_symbol(symbol)
+
+        if normalized is not None:
+            self._append_symbol(normalized)
 
     @Slot()
     def finishLetter(self) -> None:
         if not self._running:
             return
 
-        expected = self.morse
-
-        if self._input == expected:
-            self._finish_correct()
+        if self._input == self.morse:
+            self._emit_correct()
         else:
-            explanation = self._describe_error(
-                self._input,
-                expected,
-            )
+            self._emit_mistake("Die Eingabe entspricht nicht dem gesuchten Morsecode.")
 
-            self._finish_mistake(explanation)
+    # ------------------------------------------------------------------
+    # Public keyboard/GPIO entry points
+    # ------------------------------------------------------------------
 
-    # --------------------------------------------------------
-    # GPIO handling
-    # --------------------------------------------------------
+    @Slot(str)
+    def buttonPressed(self, button_name: str) -> None:
+        """
+        Called from QML keyboard simulation.
 
-    def _button_pressed(self, button_name: str) -> None:
-        self._press_started[button_name] = time.monotonic()
+        Expected names:
+            single
+            left
+            right
+        """
 
-    def _button_released(
-        self,
-        button_name: str,
-        configured_type: str,
-    ) -> None:
         if not self._running:
             return
 
-        normalized_type = configured_type.strip().lower()
+        button_name = button_name.strip().lower()
 
-        if normalized_type == "pause":
+        if button_name not in {
+            "single",
+            "left",
+            "right",
+        }:
+            print(f"Unknown button name: {button_name!r}")
             return
 
-        if normalized_type in ("kurz", "short"):
-            self._append_symbol(".")
+        # Prevent repeated key-down events from replacing the start time.
+        if button_name in self._pressed_at:
             return
 
-        if normalized_type in ("lang", "long"):
-            self._append_symbol("_")
+        self._pressed_at[button_name] = time.monotonic()
+
+        print(f"Button pressed: {button_name}")
+
+    @Slot(str)
+    def buttonReleased(self, button_name: str) -> None:
+        """
+        Called from QML keyboard simulation.
+        """
+
+        if not self._running:
             return
 
-        started = self._press_started.get(
+        button_name = button_name.strip().lower()
+
+        pressed_at = self._pressed_at.pop(
             button_name,
-            time.monotonic(),
+            None,
         )
 
-        duration = time.monotonic() - started
+        if pressed_at is None:
+            return
 
-        if duration <= SHORT_PRESS_LIMIT:
+        duration = time.monotonic() - pressed_at
+        button_function = self._function_for_button(button_name)
+
+        print(
+            f"Button released: {button_name}, "
+            f"duration={duration:.3f}s, "
+            f"function={button_function}"
+        )
+
+        self._process_button_release(
+            button_function,
+            duration,
+        )
+
+    # ------------------------------------------------------------------
+    # Input processing
+    # ------------------------------------------------------------------
+
+    def _function_for_button(
+        self,
+        button_name: str,
+    ) -> str:
+        if button_name == "single":
+            return "Zeitgesteuert"
+
+        if button_name == "left":
+            return self._left_type
+
+        if button_name == "right":
+            return self._right_type
+
+        return "Pause"
+
+    def _process_button_release(
+        self,
+        button_function: str,
+        duration: float,
+    ) -> None:
+        if button_function == "Kurz":
             self._append_symbol(".")
-        else:
-            self._append_symbol("_")
+            return
 
-    # --------------------------------------------------------
-    # Evaluation
-    # --------------------------------------------------------
+        if button_function == "Lang":
+            self._append_symbol("_")
+            return
+
+        if button_function == "Pause":
+            # Pause is currently ignored in letter mode.
+            return
+
+        if button_function == "Zeitgesteuert":
+            if duration <= 0.25:
+                self._append_symbol(".")
+            else:
+                self._append_symbol("_")
+            return
+
+        print(f"Unknown button function: " f"{button_function!r}")
 
     def _append_symbol(self, symbol: str) -> None:
         if not self._running:
@@ -338,32 +326,33 @@ class LetterTrainer(QObject):
         self._input += symbol
         self.inputChanged.emit()
 
-        expected = self.morse
+        print(f"Input: {self._input}; " f"expected: {self.morse}")
 
-        if not expected.startswith(self._input):
-            explanation = self._describe_error(
-                self._input,
-                expected,
-            )
-
-            self._finish_mistake(explanation)
+        if not self.morse.startswith(self._input):
+            self._emit_mistake("Das zuletzt eingegebene Zeichen ist falsch.")
             return
 
-        if self._input == expected:
-            self._finish_correct()
+        if self._input == self.morse:
+            self._emit_correct()
 
-    def _finish_correct(self) -> None:
+    def _emit_correct(self) -> None:
         elapsed = time.monotonic() - self._started_at
 
         self._running = False
+        self._pressed_at.clear()
         self.runningChanged.emit()
+
         self.correct.emit(elapsed)
 
-    def _finish_mistake(self, explanation: str) -> None:
+    def _emit_mistake(
+        self,
+        explanation: str,
+    ) -> None:
         entered = self._input
         expected = self.morse
 
         self._running = False
+        self._pressed_at.clear()
         self.runningChanged.emit()
 
         self.mistake.emit(
@@ -373,33 +362,57 @@ class LetterTrainer(QObject):
         )
 
     @staticmethod
-    def _describe_error(
-        entered: str,
-        expected: str,
-    ) -> str:
-        common_length = min(
-            len(entered),
-            len(expected),
-        )
+    def _normalize_symbol(
+        symbol: str,
+    ) -> Optional[str]:
+        if symbol in {".", "•"}:
+            return "."
 
-        for position in range(common_length):
-            if entered[position] != expected[position]:
-                entered_name = "kurz" if entered[position] == "." else "lang"
+        if symbol in {
+            "_",
+            "-",
+            "—",
+        }:
+            return "_"
 
-                expected_name = "kurz" if expected[position] == "." else "lang"
+        return None
 
-                return (
-                    f"Das Zeichen {position + 1} war "
-                    f"{entered_name}, erwartet wurde "
-                    f"{expected_name}."
+    # ------------------------------------------------------------------
+    # GPIO support
+    # ------------------------------------------------------------------
+
+    def _setup_gpio(self) -> None:
+        if Button is None:
+            print("GPIO unavailable: keyboard development " "mode can still be used.")
+            return
+
+        try:
+            self._single_button = Button(
+                self._single_pin,
+                bounce_time=0.01,
+            )
+
+            self._single_button.when_pressed = lambda: self.buttonPressed("single")
+            self._single_button.when_released = lambda: self.buttonReleased("single")
+
+            # Do not create the left button a second time when it uses
+            # the same pin as the single button.
+            if self._left_pin != self._single_pin:
+                self._left_button = Button(
+                    self._left_pin,
+                    bounce_time=0.01,
                 )
 
-        if len(entered) > len(expected):
-            return "Du hast mindestens ein Zeichen zu viel eingegeben."
+                self._left_button.when_pressed = lambda: self.buttonPressed("left")
+                self._left_button.when_released = lambda: self.buttonReleased("left")
 
-        if len(entered) < len(expected):
-            missing = len(expected) - len(entered)
+            self._right_button = Button(
+                self._right_pin,
+                bounce_time=0.01,
+            )
 
-            return f"Es fehlen noch {missing} " f"Morsezeichen."
+            self._right_button.when_pressed = lambda: self.buttonPressed("right")
+            self._right_button.when_released = lambda: self.buttonReleased("right")
 
-        return "Der eingegebene Morsecode war nicht korrekt."
+        except Exception as error:
+            print(f"GPIO input unavailable: {error}")
