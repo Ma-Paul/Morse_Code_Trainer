@@ -10,6 +10,8 @@ from PySide6.QtGui import QGuiApplication
 from PySide6.QtQml import QQmlApplicationEngine
 
 from Letter import LetterTrainer
+from Word import WordTrainer
+from Sentence import SentenceTrainer
 
 
 class AppBridge(QObject):
@@ -73,7 +75,8 @@ def main() -> int:
     engine = QQmlApplicationEngine()
     bridge = AppBridge()
     letter_trainer = LetterTrainer()
-
+    word_trainer = WordTrainer()
+    sentence_trainer = SentenceTrainer()
     engine.rootContext().setContextProperty(
         "AppBridge",
         bridge,
@@ -81,6 +84,14 @@ def main() -> int:
     engine.rootContext().setContextProperty(
         "LetterTrainer",
         letter_trainer,
+    )
+    engine.rootContext().setContextProperty(
+        "WordTrainer",
+        word_trainer,
+    )
+    engine.rootContext().setContextProperty(
+        "SentenceTrainer",
+        sentence_trainer,
     )
     engine.rootContext().setContextProperty(
         "DevelopmentMode",

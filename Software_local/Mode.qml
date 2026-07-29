@@ -22,9 +22,24 @@ Page {
                 leftButtonType: Globals.lefttype,
                 rightButtonType: Globals.righttype
             })
-        } else {
-            console.log(value + " mode is not implemented yet")
-        }
+	} else if (value === "Word") {
+	    stackView.push("WordMode.qml", {
+		showMorseCode: Globals.showLetterMorse,
+		inputType: Globals.eingabeart,
+		leftButtonType: Globals.lefttype,
+		rightButtonType: Globals.righttype
+
+	    })
+    } else if (value === "Sentence") {
+        stackView.push("SentenceMode.qml", {
+            showMorseCode: Globals.showLetterMorse,
+            inputType: Globals.eingabeart,
+            leftButtonType: Globals.lefttype,
+            rightButtonType: Globals.righttype
+        })
+    } else {
+        console.log(value + " mode is not implemented yet")
+    }
     }
 
     background: Rectangle {

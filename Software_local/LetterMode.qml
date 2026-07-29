@@ -18,17 +18,15 @@ Page {
 
     property string activeLetter: "l"
 
-    property real resultTime: 0
-
-    property string wrongEntered: ""
-    property string wrongExpected: ""
-    property string wrongExplanation: ""
 
     function displaySymbol(symbol) {
         return symbol === "." ? "•" : "—"
     }
 
     function displayCode(code) {
+	if (!code) {
+	    return ""
+	}
         return code
             .replaceAll("_", "—")
             .replaceAll(".", "•")
@@ -392,321 +390,34 @@ Page {
         }
     }
 
-    Dialog {
-	id: correctDialog
-
-	anchors.centerIn: parent
-	modal: true
-	closePolicy: Popup.NoAutoClose
-
-	width: Math.min(500, root.width - 40)
-	padding: 0
-
-	background: Rectangle {
-	    radius: 28
-	    color: "#FFFFFF"
-	    border.color: "#E4E4E9"
-	    border.width: 1
+    TrainingResultDialog {
+	id: resultDialog
+	trainer: LetterTrainer
+	onContinueRequested: {
+	    root.newLetter()
+	    Qt.callLater(function() {
+		root.forceActiveFocus()
+	    })
 	}
-
-	contentItem: Item {
-	    implicitWidth: correctContent.implicitWidth + 60
-	    implicitHeight: correctContent.implicitHeight + 60
-
-        Column {
-            id: correctContent
-
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.margins: 30
-
-            spacing: 16
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "✓"
-                color: "#34C759"
-                font.pixelSize: 54
-                font.weight: Font.DemiBold
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: qsTr("Richtig")
-                color: "#1D1D1F"
-                font.pixelSize: 30
-                font.weight: Font.DemiBold
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: root.activeLetter.toUpperCase()
-                      + root.activeLetter.toLowerCase()
-
-                color: "#1D1D1F"
-                font.pixelSize: 74
-                font.weight: Font.DemiBold
-            }
-
-            Row {
-                anchors.horizontalCenter: parent.horizontalCenter
-                spacing: 12
-
-                Repeater {
-                    model: LetterTrainer.morse.length
-
-                    delegate: Text {
-                        required property int index
-
-                        text: root.displaySymbol(
-                            LetterTrainer.morse.charAt(index)
-                        )
-
-                        color: "#34C759"
-                        font.pixelSize: 46
-                        font.weight: Font.DemiBold
-                    }
-                }
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: qsTr(
-                    "Zeit: %1 s"
-                ).arg(root.resultTime.toFixed(2))
-
-                color: "#6E6E73"
-                font.pixelSize: 18
-            }
-
-            Item {
-                width: 1
-                height: 4
-            }
-
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: qsTr("Weiter")
-
-                onClicked: {
-                    correctDialog.close()
-                    root.newLetter()
-
-                    Qt.callLater(function() {
-                        root.forceActiveFocus()
-                    })
-                }
-            }
-        }
-    }
-}
-Dialog {
-    id: mistakeDialog
-
-    anchors.centerIn: parent
-    modal: true
-    closePolicy: Popup.NoAutoClose
-
-    width: Math.min(520, root.width - 40)
-    padding: 0
-
-    background: Rectangle {
-        radius: 28
-        color: "#FFFFFF"
-        border.color: "#E4E4E9"
-        border.width: 1
-    }
-
-    contentItem: Item {
-        implicitWidth: mistakeContent.implicitWidth + 60
-        implicitHeight: mistakeContent.implicitHeight + 60
-
-        Column {
-            id: mistakeContent
-
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.margins: 30
-
-            spacing: 14
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "!"
-                color: "#FF3B30"
-                font.pixelSize: 54
-                font.weight: Font.DemiBold
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: qsTr("Nicht ganz richtig")
-                color: "#1D1D1F"
-                font.pixelSize: 28
-                font.weight: Font.DemiBold
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: root.activeLetter.toUpperCase()
-                      + root.activeLetter.toLowerCase()
-
-                color: "#1D1D1F"
-                font.pixelSize: 68
-                font.weight: Font.DemiBold
-            }
-
-            Row {
-                anchors.horizontalCenter: parent.horizontalCenter
-                spacing: 12
-
-                Repeater {
-                    model: root.wrongExpected.length
-
-                    delegate: Text {
-                        required property int index
-
-                        text: root.displaySymbol(
-                            root.wrongExpected.charAt(index)
-                        )
-
-                        color: "#34C759"
-                        font.pixelSize: 42
-                        font.weight: Font.DemiBold
-                    }
-                }
-            }
-
-            Text {
-                width: parent.width
-
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-
-                text: root.wrongExplanation
-
-                color: "#6E6E73"
-                font.pixelSize: 17
-            }
-
-            Rectangle {
-                width: parent.width
-                height: mistakeInformation.implicitHeight + 28
-                radius: 18
-
-                color: "#F7F7F9"
-                clip: true
-
-                Column {
-                    id: mistakeInformation
-
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-                    anchors.top: parent.top
-
-                    anchors.leftMargin: 18
-                    anchors.rightMargin: 18
-                    anchors.topMargin: 14
-
-                    spacing: 10
-
-                    Text {
-                        width: parent.width
-
-                        text: qsTr("Deine Eingabe:")
-
-                        color: "#6E6E73"
-                        font.pixelSize: 15
-                    }
-
-		    Text {
-			width: parent.width
-
-			text: root.wrongEntered.length > 0
-			      ? root.displayCode(root.wrongEntered)
-			      : qsTr("keine Eingabe")
-
-			color: "#FF3B30"
-			font.pixelSize: 24
-			font.weight: Font.DemiBold
-			font.letterSpacing: 4
-
-			wrapMode: Text.WrapAnywhere
-		    }
-
-                    Text {
-                        width: parent.width
-
-			text: root.displayCode(
-			    LetterTrainer.lastMistakeExpected
-			)
-                        color: "#34C759"
-                        font.pixelSize: 24
-                        font.weight: Font.DemiBold
-                        font.letterSpacing: 4
-
-                        wrapMode: Text.WrapAnywhere
-                    }
-                }
-            }
-
-            Item {
-                width: 1
-                height: 4
-            }
-
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: qsTr("Weiter")
-
-                onClicked: {
-                    mistakeDialog.close()
-                    root.newLetter()
-
-                    Qt.callLater(function() {
-                        root.forceActiveFocus()
-                    })
-                }
-            }
-        }
-    }
-}
+    } 
     Connections {
 	target: LetterTrainer
 
 	function onCorrect(elapsedSeconds) {
-	    console.log(
-		"Correct signal:",
+	    resultDialog.showCorrect(
+		root.activeLetter.toUpperCase()
+		    + root.activeLetter.toLowerCase(),
+		"",
 		elapsedSeconds
 	    )
-
-	    root.resultTime = Number(elapsedSeconds)
-	    correctDialog.open()
 	}
 
 	function onMistake() {
-	    root.wrongExplanation =
-		LetterTrainer.lastMistakeExplanation
-
-	    mistakeDialog.open()
-
-	    enteredCodeText.text =
-		LetterTrainer.lastMistakeEntered.length > 0
-		? root.displayCode(
-		      LetterTrainer.lastMistakeEntered
-		  )
-		: qsTr("keine Eingabe")
+	    resultDialog.showMistake(
+		root.activeLetter.toUpperCase()
+		    + root.activeLetter.toLowerCase(),
+		""
+	    )
 	}
     }
 }
