@@ -1,5 +1,4 @@
 .pragma library
-
 // "1" = one button
 // "2" = two buttons
 var eingabeart = "1"
