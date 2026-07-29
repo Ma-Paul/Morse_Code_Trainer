@@ -16,14 +16,14 @@ Page {
         )
 
         if (value === "Letter") {
-            stackView.push("LetterMode.qml", {
+            stackView.push("Letter/LetterMode.qml", {
                 showMorseCode: Globals.showLetterMorse,
                 inputType: Globals.eingabeart,
                 leftButtonType: Globals.lefttype,
                 rightButtonType: Globals.righttype
             })
 	} else if (value === "Word") {
-	    stackView.push("WordMode.qml", {
+	    stackView.push("Word/WordMode.qml", {
 		showMorseCode: Globals.showLetterMorse,
 		inputType: Globals.eingabeart,
 		leftButtonType: Globals.lefttype,
@@ -31,7 +31,7 @@ Page {
 
 	    })
     } else if (value === "Sentence") {
-        stackView.push("SentenceMode.qml", {
+        stackView.push("Sentence/SentenceMode.qml", {
             showMorseCode: Globals.showLetterMorse,
             inputType: Globals.eingabeart,
             leftButtonType: Globals.lefttype,

@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import "../" // access to root-level TrainingResultDialog.qml
 
 Page {
     id: root
