@@ -37,6 +37,8 @@ Page {
             leftButtonType: Globals.lefttype,
             rightButtonType: Globals.righttype
         })
+    } else if (value === "Online") {
+        stackView.push("Online/OnlineMode.qml")
     } else {
         console.log(value + " mode is not implemented yet")
     }

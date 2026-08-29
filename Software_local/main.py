@@ -12,6 +12,7 @@ from PySide6.QtQml import QQmlApplicationEngine
 from Letter import LetterTrainer
 from Word import WordTrainer
 from Sentence import SentenceTrainer
+from Online import OnlineBridge, OnlineGame
 
 
 class AppBridge(QObject):
@@ -77,6 +78,8 @@ def main() -> int:
     letter_trainer = LetterTrainer()
     word_trainer = WordTrainer()
     sentence_trainer = SentenceTrainer()
+    online_bridge = OnlineBridge("http://127.0.0.1:8000")
+    online_game = OnlineGame(online_bridge, letter_trainer, word_trainer, sentence_trainer)
     engine.rootContext().setContextProperty(
         "AppBridge",
         bridge,
@@ -92,6 +95,14 @@ def main() -> int:
     engine.rootContext().setContextProperty(
         "SentenceTrainer",
         sentence_trainer,
+    )
+    engine.rootContext().setContextProperty(
+        "OnlineBridge",
+        online_bridge,
+    )
+    engine.rootContext().setContextProperty(
+        "OnlineGame",
+        online_game,
     )
     engine.rootContext().setContextProperty(
         "DevelopmentMode",
