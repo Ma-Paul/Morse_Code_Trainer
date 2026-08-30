@@ -83,6 +83,7 @@ class WordTrainer(QObject):
         single_pin: int = 17,
         left_pin: int = 17,
         right_pin: int = 27,
+        setup_gpio: bool = True,
         parent: Optional[QObject] = None,
     ) -> None:
         super().__init__(parent)
@@ -116,7 +117,8 @@ class WordTrainer(QObject):
         self._left_pin = left_pin
         self._right_pin = right_pin
         self._letter_completed_at: Optional[float] = None
-        self._setup_gpio()
+        if setup_gpio:
+            self._setup_gpio()
 
     # ------------------------------------------------------------------
     # Properties

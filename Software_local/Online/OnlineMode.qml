@@ -44,7 +44,7 @@ Page {
                             Text { text:modelData.challenge_text; color:"#6E6E73" }
                         }
                         Button { id:startDaily; text:modelData.completed?qsTr("Done"):qsTr("Start"); enabled:!modelData.completed
-                            onClicked:stackView.push("Online/DailyChallengeMode.qml", {
+                            onClicked:stackView.push("DailyChallengeMode.qml", {
                                 challengeId:modelData.id, challengeMode:modelData.mode, challengeText:modelData.challenge_text,
                                 inputType:Globals.eingabeart, leftButtonType:Globals.lefttype, rightButtonType:Globals.righttype
                             }) }
@@ -54,7 +54,13 @@ Page {
 
             Row { width:parent.width; spacing:10
                 TextField { id:invite; width:parent.width-joinCode.width-10; placeholderText:qsTr("Invite code") }
-                Button { id:joinCode; text:qsTr("Join"); onClicked:{ OnlineBridge.joinWithCode(invite.text); invite.clear() } }
+                Button { id:joinCode; text:qsTr("Join"); onClicked:{
+                    var tournamentId = OnlineBridge.joinWithCode(invite.text)
+                    invite.clear()
+                    if (tournamentId >= 0) {
+                        stackView.push("WaitingRoom.qml", { tournamentId: tournamentId })
+                    }
+                } }
             }
 
             Text { text:qsTr("My matches"); font.pixelSize:27; font.weight:Font.DemiBold }
@@ -66,7 +72,7 @@ Page {
                             Text { text:qsTr("vs %1").arg(modelData.opponent); color:"#6E6E73" }
                             Text { text:modelData.scheduled_at+" · "+modelData.status; color:"#8E8E93"; font.pixelSize:13 }
                         }
-                        Button { id:playButton; text:qsTr("Play"); enabled:modelData.status!=="finished"; onClicked:stackView.push("Online/TournamentMatch.qml", {
+                        Button { id:playButton; text:qsTr("Play"); enabled:modelData.status!=="finished"; onClicked:stackView.push("TournamentMatch.qml", {
                                 matchId:modelData.id, inputType:Globals.eingabeart, leftButtonType:Globals.lefttype, rightButtonType:Globals.righttype
                             }) }
                     }
@@ -82,7 +88,12 @@ Page {
                             Text { text:modelData.mode+" · "+modelData.visibility+" · "+modelData.recurrence; color:"#6E6E73" }
                             Text { text:modelData.starts_at+" · "+modelData.status; color:"#8E8E93"; font.pixelSize:13 }
                         }
-                        Button { id:joinOpen; visible:modelData.visibility==="open"; text:qsTr("Join"); onClicked:OnlineBridge.joinTournament(modelData.id) }
+                        Button { id:joinOpen; visible:modelData.visibility==="open"; text:qsTr("Join"); onClicked:{
+                            var tournamentId = OnlineBridge.joinTournament(modelData.id)
+                            if (tournamentId >= 0) {
+                                stackView.push("WaitingRoom.qml", { tournamentId: tournamentId })
+                            }
+                        } }
                     }
                 }
             }

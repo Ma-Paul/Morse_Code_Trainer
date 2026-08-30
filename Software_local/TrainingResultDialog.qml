@@ -18,6 +18,8 @@ Dialog {
     property string expectedCode:
         trainer ? trainer.lastMistakeExpected : ""
 
+    property string correctCode: ""
+
     property string explanation:
         trainer ? trainer.lastMistakeExplanation : ""
 
@@ -59,8 +61,10 @@ Dialog {
         displayTitle = title || ""
         displaySubtitle = subtitle || ""
         elapsedSeconds = Number(seconds) || 0
+        correctCode = trainer && trainer.morse !== undefined ? trainer.morse : ""
         resultType = "correct"
         open()
+        autoContinue.restart()
     }
 
     function showMistake(
@@ -70,7 +74,21 @@ Dialog {
         displayTitle = title || ""
         displaySubtitle = subtitle || ""
         resultType = "mistake"
+        correctCode = ""
         open()
+        autoContinue.restart()
+    }
+
+    Timer {
+        id: autoContinue
+        interval: 1000
+        repeat: false
+        onTriggered: {
+            if (root.opened) {
+                root.close()
+                root.continueRequested()
+            }
+        }
     }
 
     background: Rectangle {
@@ -167,19 +185,19 @@ Dialog {
                     parent.horizontalCenter
 
                 visible:
-                    root.expectedCode.length > 0
+                    (root.isCorrect ? root.correctCode : root.expectedCode).length > 0
 
                 spacing: 12
 
                 Repeater {
                     model:
-                        root.expectedCode.length
+                        (root.isCorrect ? root.correctCode : root.expectedCode).length
 
                     delegate: Text {
                         required property int index
 
                         text: root.displaySymbol(
-                            root.expectedCode.charAt(index)
+                            (root.isCorrect ? root.correctCode : root.expectedCode).charAt(index)
                         )
 
                         color: "#34C759"
@@ -313,6 +331,7 @@ Dialog {
                 text: qsTr("Weiter")
 
                 onClicked: {
+                    autoContinue.stop()
                     root.close()
                     root.continueRequested()
                 }

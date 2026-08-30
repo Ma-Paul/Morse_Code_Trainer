@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/MorseCodeOverlay">
-    <file alias="qmldir">/Users/paulmantz/git/Morse_Code_Trainer/MorseCodeOverlay/build/Qt_6_11_0_for_macOS-Debug/MorseCodeOverlay/qmldir</file>
-  </qresource>
-</RCC>
-

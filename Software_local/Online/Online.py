@@ -65,14 +65,28 @@ class OnlineBridge(QObject):
             self.leaderboardChanged.emit(); self.tournamentsChanged.emit(); self.dailyChallengesChanged.emit(); self.matchesChanged.emit(); self._set_error('')
         except Exception as e: self._set_error(e)
 
-    @Slot(int)
+    @Slot(int, result=int)
     def joinTournament(self,tid):
-        try: self._request(f'/api/tournaments/{int(tid)}/join','POST',{'player_id':self._player_id}); self.refresh()
-        except Exception as e: self._set_error(e)
-    @Slot(str)
+        try:
+            data=self._request(f'/api/tournaments/{int(tid)}/join','POST',{'player_id':self._player_id})
+            self.refresh(); self._set_error(''); return int(data.get('id', tid))
+        except Exception as e:
+            self._set_error(e); return -1
+
+    @Slot(str, result=int)
     def joinWithCode(self,code):
-        try: self._request('/api/tournaments/join-code','POST',{'player_id':self._player_id,'invite_code':str(code).strip()}); self.refresh()
-        except Exception as e: self._set_error(e)
+        try:
+            data=self._request('/api/tournaments/join-code','POST',{'player_id':self._player_id,'invite_code':str(code).strip()})
+            self.refresh(); self._set_error(''); return int(data.get('id', -1))
+        except Exception as e:
+            self._set_error(e); return -1
+
+    @Slot(int, result='QVariantMap')
+    def loadTournament(self,tid):
+        try:
+            return self._request(f'/api/tournaments/{int(tid)}')
+        except Exception as e:
+            self._set_error(e); return {}
     @Slot(int)
     def completeDaily(self,cid):
         try: self._request('/api/daily/complete','POST',{'player_id':self._player_id,'challenge_id':int(cid)}); self.refresh()
