@@ -59,7 +59,25 @@ Page {
         mistakeTimer.restart()
     }
 
-    Component.onCompleted: startChallenge()
+    Component.onCompleted: {
+	PhysicalInput.setActiveMode("DailyChallenge")
+	PhysicalInput.setOnlineTrainer(challengeMode)
+	startChallenge()
+	Qt.callLater(function() {
+	    root.forceActiveFocus()
+	})
+    }
+    Component.onDestruction: {
+	PhysicalInput.clearActiveMode()
+
+	if (challengeMode === "Letter") {
+	    LetterTrainer.stop()
+	} else if (challengeMode === "Word") {
+	    WordTrainer.stop()
+	} else if (challengeMode === "Sentence") {
+	    SentenceTrainer.stop()
+	}
+    }
 
     Timer {
         id: correctTimer

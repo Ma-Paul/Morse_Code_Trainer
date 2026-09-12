@@ -21,15 +21,16 @@ Page {
     Keys.priority: Keys.BeforeItem
 
     Component.onCompleted: {
-	PhysicalInput.setActiveMode("Online")
-
-	OnlineGame.configureInput(
-	    Globals.eingabeart,
-	    Globals.lefttype,
-	    Globals.righttype
+	PhysicalInput.setActiveMode("Tournament")
+	PhysicalInput.setOnlineTrainer(
+	    OnlineGame.mode
 	)
 
 	OnlineGame.start(matchId)
+
+	Qt.callLater(function() {
+	    root.forceActiveFocus()
+	})
     }
     Component.onDestruction: {
         OnlineGame.stop()

@@ -39,7 +39,7 @@ class PhysicalInputRouter(QObject):
         self.online_game = online_game
 
         self._active_mode = ""
-
+        self._online_trainer = None
         self.single_button = None
         self.right_button = None
 
@@ -100,6 +100,27 @@ class PhysicalInputRouter(QObject):
             self._active_mode,
         )
 
+    @Slot(str)
+    def setOnlineTrainer(self, trainer_name: str) -> None:
+        trainer_name = str(trainer_name)
+
+        if trainer_name == "Letter":
+            self._online_trainer = self.letter
+
+        elif trainer_name == "Word":
+            self._online_trainer = self.word
+
+        elif trainer_name == "Sentence":
+            self._online_trainer = self.sentence
+
+        else:
+            self._online_trainer = None
+
+        print(
+            "Online physical trainer:",
+            trainer_name,
+        )
+
     @Slot()
     def clearActiveMode(self) -> None:
         print(
@@ -119,8 +140,11 @@ class PhysicalInputRouter(QObject):
         if self._active_mode == "Sentence":
             return self.sentence
 
-        if self._active_mode == "Online":
-            return self.online_game
+        if self._active_mode in {
+            "DailyChallenge",
+            "Tournament",
+        }:
+            return self._online_trainer
 
         return None
 

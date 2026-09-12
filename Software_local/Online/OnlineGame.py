@@ -45,7 +45,7 @@ class OnlineGame(QObject):
         self.sentence.mistake.connect(self._mistake)
 
     @Property(str, notify=stateChanged)
-    def mode(self):
+    def mode(self) -> str:
         return self._mode
 
     @Property(str, notify=stateChanged)
