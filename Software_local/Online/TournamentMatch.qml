@@ -17,33 +17,31 @@ Page {
     Keys.priority: Keys.BeforeItem
 
     Component.onCompleted: {
-	PhysicalInput.setActiveMode(
-	    "Tournament"
-	)
+        PhysicalInput.setActiveMode("Tournament")
 
-	OnlineGame.configureInput(
-	    Globals.eingabeart,
-	    Globals.lefttype,
-	    Globals.righttype
-	)
+        // Use the settings passed to this page. TournamentMatch.qml is in
+        // Online/, so relying on an unimported Globals object prevented the
+        // rest of onCompleted (including OnlineGame.start) from running.
+        OnlineGame.configureInput(
+            inputType,
+            leftButtonType,
+            rightButtonType
+        )
 
-	OnlineGame.start(
-	    matchId
-	)
+        if (!OnlineGame.start(matchId)) {
+            console.log("Could not start tournament match", matchId)
+        }
 
-	PhysicalInput.setOnlineTrainer(
-	    OnlineGame.activeTrainerName
-	)
-
-	Qt.callLater(function() {
-	    root.forceActiveFocus()
-	})
+        Qt.callLater(function() {
+            root.forceActiveFocus()
+        })
     }
+
     Component.onDestruction: {
-	PhysicalInput.clearActiveMode()
-	OnlineGame.stop()
-
+        OnlineGame.stop()
+        PhysicalInput.clearActiveMode()
     }
+
     Keys.onPressed: function(e) {
         if (e.isAutoRepeat || OnlineGame.showingCorrect || OnlineGame.showingMistake)
             return
@@ -187,15 +185,6 @@ Page {
         function onFinished(score, time) {
             result.open()
         }
-	function onActiveTrainerChanged() {
-	    console.log(
-		"Online active trainer:",
-		OnlineGame.activeTrainerName
-	    )
-	    PhysicalInput.setOnlineTrainer(
-	    OnlineGame.activeTrainerName
-	    )
-	}
     }
 
     Dialog {

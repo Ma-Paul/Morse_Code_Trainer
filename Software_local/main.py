@@ -129,47 +129,37 @@ class PhysicalInputRouter(QObject):
         )
 
         self._active_mode = ""
+        self._online_trainer = None
 
     def _active_target(self):
-        # Online must be checked FIRST.
-        #
-        # During an online tournament, for example, LetterTrainer.running
-        # is also True. If we checked Letter first, the GPIO input would
-        # bypass OnlineGame.
-        if self.online_game.running:
+        # Route by the page that explicitly owns the physical input.
+        # This avoids guessing from trainer.running, which is ambiguous
+        # during Online modes because the underlying trainer is running too.
+        if self._active_mode == "Tournament":
             return self.online_game
 
-        if self.sentence.running:
+        if self._active_mode == "DailyChallenge":
+            return self._online_trainer
+
+        if self._active_mode == "Sentence":
             return self.sentence
 
-        if self.word.running:
+        if self._active_mode == "Word":
             return self.word
 
-        if self.letter.running:
+        if self._active_mode == "Letter":
             return self.letter
 
         return None
 
     def _input_type(self, target):
-        # OnlineGame itself does not contain the input configuration.
-        # Its currently active Letter/Word/Sentence trainer does.
         if target is self.online_game:
             trainer = self.online_game.trainer()
-
             if trainer is None:
                 return "1"
+            return getattr(trainer, "_input_type", "1")
 
-            return getattr(
-                trainer,
-                "_input_type",
-                "1",
-            )
-
-        return getattr(
-            target,
-            "_input_type",
-            "1",
-        )
+        return getattr(target, "_input_type", "1")
 
     def _dispatch(
         self,
