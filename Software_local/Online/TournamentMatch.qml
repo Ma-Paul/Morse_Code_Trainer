@@ -21,20 +21,32 @@ Page {
     Keys.priority: Keys.BeforeItem
 
     Component.onCompleted: {
-	PhysicalInput.setActiveMode("Tournament")
-	PhysicalInput.setOnlineTrainer(
-	    OnlineGame.mode
+	PhysicalInput.setActiveMode(
+	    "Tournament"
 	)
 
-	OnlineGame.start(matchId)
+	OnlineGame.configureInput(
+	    Globals.eingabeart,
+	    Globals.lefttype,
+	    Globals.righttype
+	)
+
+	OnlineGame.start(
+	    matchId
+	)
+
+	PhysicalInput.setOnlineTrainer(
+	    OnlineGame.activeTrainerName
+	)
 
 	Qt.callLater(function() {
 	    root.forceActiveFocus()
 	})
     }
     Component.onDestruction: {
-        OnlineGame.stop()
 	PhysicalInput.clearActiveMode()
+	OnlineGame.stop()
+
     }
     Keys.onPressed: function(e) {
         if (e.isAutoRepeat || OnlineGame.showingCorrect || OnlineGame.showingMistake)
@@ -156,6 +168,15 @@ Page {
         function onFinished(score, time) {
             result.open()
         }
+	function onActiveTrainerChanged() {
+	    console.log(
+		"Online active trainer:",
+		OnlineGame.activeTrainerName
+	    )
+	    PhysicalInput.setOnlineTrainer(
+	    OnlineGame.activeTrainerName
+	    )
+	}
     }
 
     Dialog {

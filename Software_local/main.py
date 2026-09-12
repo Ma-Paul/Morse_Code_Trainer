@@ -267,7 +267,7 @@ def main() -> int:
     letter_trainer = LetterTrainer(setup_gpio=False)
     word_trainer = WordTrainer(setup_gpio=False)
     sentence_trainer = SentenceTrainer(setup_gpio=False)
-    online_bridge = OnlineBridge("http://127.0.0.1:8000")
+    online_bridge = OnlineBridge("http://10.3.141.1:8000")
     online_game = OnlineGame(
         online_bridge, letter_trainer, word_trainer, sentence_trainer
     )
