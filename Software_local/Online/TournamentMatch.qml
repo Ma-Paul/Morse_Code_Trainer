@@ -9,10 +9,6 @@ Page {
     property string leftButtonType: "Zeitgesteuert"
     property string rightButtonType: "Zeitgesteuert"
 
-    property var trainer: OnlineGame.mode === "Letter"
-                          ? LetterTrainer
-                          : (OnlineGame.mode === "Word" ? WordTrainer : SentenceTrainer)
-
     property bool singleDown: false
     property bool leftDown: false
     property bool rightDown: false
@@ -104,42 +100,65 @@ Page {
             color: "#007AFF"
         }
 
-        Text {
-            anchors.horizontalCenter: parent.horizontalCenter
-            text: OnlineGame.challenge.toUpperCase()
-            font.pixelSize: 64
-            font.weight: Font.DemiBold
-            color: "#1D1D1F"
-        }
+	Text {
+	    anchors.horizontalCenter: parent.horizontalCenter
 
+	    text: OnlineGame.mode === "Sentence"
+		  ? OnlineGame.currentWord.toUpperCase()
+		  : OnlineGame.mode === "Word"
+		    ? OnlineGame.currentWord.toUpperCase()
+		    : (
+			OnlineGame.currentLetter.length > 0
+			? OnlineGame.currentLetter.toUpperCase()
+			  + OnlineGame.currentLetter.toLowerCase()
+			: ""
+		      )
+
+	    font.pixelSize: 64
+	    font.weight: Font.DemiBold
+	    color: "#1D1D1F"
+	}
         // Progressive Morse validation, matching the normal training modes.
         // The entire expected code remains green for one second after a
         // correct answer before OnlineGame advances to the next challenge.
-        Row {
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 10
+	Row {
+	    anchors.horizontalCenter: parent.horizontalCenter
+	    spacing: 10
 
-            Repeater {
-                model: trainer && trainer.morse !== undefined ? trainer.morse.length : 0
+	    Repeater {
+		model: OnlineGame.morse.length
 
-                delegate: Text {
-                    required property int index
-                    text: trainer.morse[index] === "." ? "•" : "—"
-                    font.pixelSize: 42
-                    font.weight: Font.Medium
-                    color: {
-                        if (OnlineGame.showingCorrect)
-                            return "#34C759"
-                        if (OnlineGame.showingMistake)
-                            return index < (trainer.currentInput !== undefined ? trainer.currentInput.length : 0)
-                                   ? "#FF3B30" : "#1D1D1F"
-                        return index < (trainer.currentInput !== undefined ? trainer.currentInput.length : 0)
-                               ? "#34C759" : "#1D1D1F"
-                    }
-                }
-            }
-        }
+		delegate: Text {
+		    required property int index
 
+		    property string expectedSymbol:
+			OnlineGame.morse.charAt(index)
+
+		    text:
+			expectedSymbol === "."
+			? "•"
+			: "—"
+
+		    font.pixelSize: 42
+		    font.weight: Font.DemiBold
+
+		    color: {
+			if (OnlineGame.showingCorrect)
+			    return "#34C759"
+
+			if (OnlineGame.showingMistake) {
+			    return index < OnlineGame.currentInput.length
+				   ? "#FF3B30"
+				   : "#1D1D1F"
+			}
+
+			return index < OnlineGame.currentInput.length
+			       ? "#34C759"
+			       : "#1D1D1F"
+		    }
+		}
+	    }
+	}
         Text {
             anchors.horizontalCenter: parent.horizontalCenter
             visible: OnlineGame.showingCorrect || OnlineGame.showingMistake

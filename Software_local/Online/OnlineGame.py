@@ -7,12 +7,7 @@ from PySide6.QtCore import QObject, Property, QTimer, Signal, Slot
 
 class OnlineGame(QObject):
     stateChanged = Signal()
-    activeTrainerChanged = Signal()
-
-    finished = Signal(
-        int,
-        float,
-    )
+    finished = Signal(int, float)
 
     def __init__(
         self,
@@ -25,18 +20,15 @@ class OnlineGame(QObject):
         super().__init__(parent)
 
         self.bridge = online_bridge
-
         self.letter = letter
         self.word = word
         self.sentence = sentence
 
         self._match_id = -1
         self._mode = ""
-
         self._challenges = []
         self._index = 0
         self._score = 0
-
         self._running = False
         self._started = 0.0
         self._duration = 120
@@ -54,6 +46,7 @@ class OnlineGame(QObject):
         self.feedback_timer.setInterval(1000)
         self.feedback_timer.timeout.connect(self._advance_after_feedback)
 
+        # Result signals
         self.letter.correct.connect(self._correct)
         self.letter.mistake.connect(self._mistake)
 
@@ -63,54 +56,86 @@ class OnlineGame(QObject):
         self.sentence.sentenceCorrect.connect(self._correct)
         self.sentence.mistake.connect(self._mistake)
 
+        # Forward trainer state changes to QML.
+        self.letter.letterChanged.connect(self.stateChanged)
+        self.letter.morseChanged.connect(self.stateChanged)
+        self.letter.inputChanged.connect(self.stateChanged)
+
+        self.word.wordChanged.connect(self.stateChanged)
+        self.word.letterChanged.connect(self.stateChanged)
+        self.word.morseChanged.connect(self.stateChanged)
+        self.word.inputChanged.connect(self.stateChanged)
+        self.word.completedLettersChanged.connect(self.stateChanged)
+
+        self.sentence.sentenceChanged.connect(self.stateChanged)
+        self.sentence.wordChanged.connect(self.stateChanged)
+        self.sentence.letterChanged.connect(self.stateChanged)
+        self.sentence.morseChanged.connect(self.stateChanged)
+        self.sentence.inputChanged.connect(self.stateChanged)
+        self.sentence.completedWordsChanged.connect(self.stateChanged)
+        self.sentence.completedLettersChanged.connect(self.stateChanged)
+
     # ----------------------------------------------------------
     # Properties
     # ----------------------------------------------------------
 
-    @Property(
-        str,
-        notify=stateChanged,
-    )
-    def mode(self) -> str:
+    @Property(str, notify=stateChanged)
+    def mode(self):
         return self._mode
 
-    @Property(
-        str,
-        notify=activeTrainerChanged,
-    )
-    def activeTrainerName(self) -> str:
-        """
-        Name used by PhysicalInputRouter.
-
-        Possible values:
-            Letter
-            Word
-            Sentence
-        """
-        return self._mode
-
-    @Property(
-        str,
-        notify=stateChanged,
-    )
-    def challenge(self) -> str:
+    @Property(str, notify=stateChanged)
+    def challenge(self):
         if self._challenges and self._index < len(self._challenges):
             return self._challenges[self._index]
 
         return ""
 
-    @Property(
-        int,
-        notify=stateChanged,
-    )
-    def score(self) -> int:
+    @Property(str, notify=stateChanged)
+    def currentLetter(self):
+        trainer = self.trainer()
+
+        if trainer is None:
+            return ""
+
+        if self._mode == "Letter":
+            return self.letter.letter
+
+        return trainer.currentLetter
+
+    @Property(str, notify=stateChanged)
+    def currentWord(self):
+        if self._mode == "Word":
+            return self.word.word
+
+        if self._mode == "Sentence":
+            return self.sentence.currentWord
+
+        return ""
+
+    @Property(str, notify=stateChanged)
+    def morse(self):
+        trainer = self.trainer()
+
+        if trainer is None:
+            return ""
+
+        return trainer.morse
+
+    @Property(str, notify=stateChanged)
+    def currentInput(self):
+        trainer = self.trainer()
+
+        if trainer is None:
+            return ""
+
+        return trainer.currentInput
+
+    @Property(int, notify=stateChanged)
+    def score(self):
         return self._score
 
-    @Property(
-        int,
-        notify=stateChanged,
-    )
-    def secondsLeft(self) -> int:
+    @Property(int, notify=stateChanged)
+    def secondsLeft(self):
         if not self._running:
             return 0
 
@@ -119,25 +144,16 @@ class OnlineGame(QObject):
             int(self._duration - (time.monotonic() - self._started)),
         )
 
-    @Property(
-        bool,
-        notify=stateChanged,
-    )
-    def running(self) -> bool:
+    @Property(bool, notify=stateChanged)
+    def running(self):
         return self._running
 
-    @Property(
-        bool,
-        notify=stateChanged,
-    )
-    def showingCorrect(self) -> bool:
+    @Property(bool, notify=stateChanged)
+    def showingCorrect(self):
         return self._showing_correct
 
-    @Property(
-        bool,
-        notify=stateChanged,
-    )
-    def showingMistake(self) -> bool:
+    @Property(bool, notify=stateChanged)
+    def showingMistake(self):
         return self._showing_mistake
 
     # ----------------------------------------------------------
@@ -157,20 +173,16 @@ class OnlineGame(QObject):
         return None
 
     # ----------------------------------------------------------
-    # Input configuration
+    # Configuration
     # ----------------------------------------------------------
 
-    @Slot(
-        str,
-        str,
-        str,
-    )
+    @Slot(str, str, str)
     def configureInput(
         self,
         input_type,
         left_type,
         right_type,
-    ) -> None:
+    ):
         self.letter.configureInput(
             input_type,
             left_type,
@@ -190,43 +202,16 @@ class OnlineGame(QObject):
         )
 
     # ----------------------------------------------------------
-    # Game control
+    # Start / stop
     # ----------------------------------------------------------
 
-    @Slot()
-    def stop(self) -> None:
-        trainer = self.trainer()
-
-        if trainer is not None:
-            trainer.stop()
-
-        self.timer.stop()
-        self.feedback_timer.stop()
-
-        was_running = self._running
-
-        self._running = False
-
-        self._advance_pending = False
-        self._showing_correct = False
-        self._showing_mistake = False
-
-        if was_running:
-            self.stateChanged.emit()
-
-    @Slot(
-        int,
-        result=bool,
-    )
-    def start(
-        self,
-        match_id,
-    ) -> bool:
+    @Slot(int, result=bool)
+    def start(self, match_id):
         data = self.bridge.loadMatch(match_id)
 
         if not data:
             print(
-                "OnlineGame: " "could not load match",
+                "OnlineGame: could not load match",
                 match_id,
             )
             return False
@@ -234,24 +219,8 @@ class OnlineGame(QObject):
         self.feedback_timer.stop()
 
         self._match_id = match_id
-
-        new_mode = str(
-            data.get(
-                "mode",
-                "",
-            )
-        )
-
-        mode_changed = new_mode != self._mode
-
-        self._mode = new_mode
-
-        self._challenges = list(
-            data.get(
-                "challenges",
-                [],
-            )
-        )
+        self._mode = str(data.get("mode", ""))
+        self._challenges = list(data.get("challenges", []))
 
         self._duration = int(
             data.get(
@@ -271,36 +240,42 @@ class OnlineGame(QObject):
         self._advance_pending = False
 
         print(
-            "OnlineGame started:",
-            f"match={self._match_id}",
-            f"mode={self._mode}",
-            f"challenges={len(self._challenges)}",
+            "Online tournament started:",
+            "mode=",
+            self._mode,
+            "challenges=",
+            len(self._challenges),
         )
 
-        # Tell QML / PhysicalInput which
-        # trainer is now active.
-        if mode_changed:
-            self.activeTrainerChanged.emit()
-        else:
-            # Still emit it on every start so the
-            # physical input router can resync.
-            self.activeTrainerChanged.emit()
-
         self._start_current()
-
         self.timer.start()
 
         self.stateChanged.emit()
 
         return True
 
+    @Slot()
+    def stop(self):
+        trainer = self.trainer()
+
+        if trainer is not None:
+            trainer.stop()
+
+        self.timer.stop()
+        self.feedback_timer.stop()
+
+        self._running = False
+        self._advance_pending = False
+        self._showing_correct = False
+        self._showing_mistake = False
+
+        self.stateChanged.emit()
+
     # ----------------------------------------------------------
-    # Challenge control
+    # Current challenge
     # ----------------------------------------------------------
 
-    def _start_current(
-        self,
-    ) -> None:
+    def _start_current(self):
         if not self._running:
             return
 
@@ -314,24 +289,9 @@ class OnlineGame(QObject):
 
         value = self._challenges[self._index]
 
-        trainer = self.trainer()
-
-        if trainer is None:
-            print(
-                "OnlineGame: " "no trainer for mode",
-                self._mode,
-            )
-            self._finish()
-            return
-
         print(
-            "Online challenge:",
-            self._index + 1,
-            "/",
-            len(self._challenges),
-            "-",
+            "Starting challenge:",
             self._mode,
-            "-",
             value,
         )
 
@@ -344,17 +304,22 @@ class OnlineGame(QObject):
         elif self._mode == "Sentence":
             self.sentence.startSentence(value)
 
+        else:
+            print(
+                "Unknown tournament mode:",
+                self._mode,
+            )
+            self._finish()
+            return
+
         self.stateChanged.emit()
 
     # ----------------------------------------------------------
-    # Physical input entry points
+    # Input
     # ----------------------------------------------------------
 
     @Slot(str)
-    def buttonPressed(
-        self,
-        name,
-    ) -> None:
+    def buttonPressed(self, name):
         if not self._running:
             return
 
@@ -365,14 +330,18 @@ class OnlineGame(QObject):
 
         if trainer is None:
             return
+
+        print(
+            "Tournament button pressed:",
+            name,
+            "mode=",
+            self._mode,
+        )
 
         trainer.buttonPressed(name)
 
     @Slot(str)
-    def buttonReleased(
-        self,
-        name,
-    ) -> None:
+    def buttonReleased(self, name):
         if not self._running:
             return
 
@@ -384,16 +353,20 @@ class OnlineGame(QObject):
         if trainer is None:
             return
 
+        print(
+            "Tournament button released:",
+            name,
+            "mode=",
+            self._mode,
+        )
+
         trainer.buttonReleased(name)
 
     # ----------------------------------------------------------
-    # Correct / mistake
+    # Result handling
     # ----------------------------------------------------------
 
-    def _correct(
-        self,
-        *args,
-    ) -> None:
+    def _correct(self, *args):
         if not self._running:
             return
 
@@ -406,19 +379,10 @@ class OnlineGame(QObject):
         self._showing_mistake = False
         self._advance_pending = True
 
-        print(
-            "Online correct:",
-            f"score={self._score}",
-        )
-
         self.stateChanged.emit()
-
         self.feedback_timer.start()
 
-    def _mistake(
-        self,
-        *args,
-    ) -> None:
+    def _mistake(self, *args):
         if not self._running:
             return
 
@@ -429,41 +393,27 @@ class OnlineGame(QObject):
         self._showing_mistake = True
         self._advance_pending = True
 
-        print("Online mistake")
-
         self.stateChanged.emit()
-
         self.feedback_timer.start()
 
-    def _advance_after_feedback(
-        self,
-    ) -> None:
+    def _advance_after_feedback(self):
         if not self._running:
             return
 
         self._index += 1
-
         self._start_current()
 
     # ----------------------------------------------------------
-    # Timer
+    # Timer / finish
     # ----------------------------------------------------------
 
-    def _tick(
-        self,
-    ) -> None:
+    def _tick(self):
         self.stateChanged.emit()
 
         if time.monotonic() - self._started >= self._duration:
             self._finish()
 
-    # ----------------------------------------------------------
-    # Finish
-    # ----------------------------------------------------------
-
-    def _finish(
-        self,
-    ) -> None:
+    def _finish(self):
         if not self._running:
             return
 
@@ -485,12 +435,6 @@ class OnlineGame(QObject):
 
         if trainer is not None:
             trainer.stop()
-
-        print(
-            "Online match finished:",
-            f"score={self._score}",
-            f"time={elapsed:.2f}",
-        )
 
         self.bridge.submitMatch(
             self._match_id,

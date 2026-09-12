@@ -131,27 +131,28 @@ class PhysicalInputRouter(QObject):
         self._active_mode = ""
 
     def _active_target(self):
-        if self._active_mode == "Letter":
-            return self.letter
+        # Online must be checked FIRST.
+        #
+        # During an online tournament, for example, LetterTrainer.running
+        # is also True. If we checked Letter first, the GPIO input would
+        # bypass OnlineGame.
+        if self.online_game.running:
+            return self.online_game
 
-        if self._active_mode == "Word":
-            return self.word
-
-        if self._active_mode == "Sentence":
+        if self.sentence.running:
             return self.sentence
 
-        if self._active_mode in {
-            "DailyChallenge",
-            "Tournament",
-        }:
-            return self._online_trainer
+        if self.word.running:
+            return self.word
+
+        if self.letter.running:
+            return self.letter
 
         return None
 
-    def _input_type(
-        self,
-        target,
-    ):
+    def _input_type(self, target):
+        # OnlineGame itself does not contain the input configuration.
+        # Its currently active Letter/Word/Sentence trainer does.
         if target is self.online_game:
             trainer = self.online_game.trainer()
 
