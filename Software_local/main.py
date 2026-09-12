@@ -20,66 +20,159 @@ from Sentence import SentenceTrainer
 from Online import OnlineBridge, OnlineGame
 
 
-class PhysicalInputRouter:
-    """Own the GPIO buttons once and forward them to the active trainer.
+class PhysicalInputRouter(QObject):
+    def __init__(
+        self,
+        letter,
+        word,
+        sentence,
+        online_game,
+        single_pin=17,
+        right_pin=27,
+        parent=None,
+    ):
+        super().__init__(parent)
 
-    Previously LetterTrainer, WordTrainer and SentenceTrainer all tried to
-    reserve GPIO 17/27. The first trainer won, so real hardware only worked
-    in Letter mode.
-    """
-
-    def __init__(self, letter, word, sentence, online_game, single_pin=17, right_pin=27):
         self.letter = letter
         self.word = word
         self.sentence = sentence
         self.online_game = online_game
+
+        self._active_mode = ""
+
         self.single_button = None
         self.right_button = None
 
         if Button is None:
-            print("GPIO unavailable: keyboard development mode can still be used.")
+            print("GPIO unavailable: keyboard development " "mode can still be used.")
             return
 
         try:
-            self.single_button = Button(single_pin, bounce_time=0.01)
-            self.right_button = Button(right_pin, bounce_time=0.01)
-            self.single_button.when_pressed = lambda: self._dispatch(True, "primary")
-            self.single_button.when_released = lambda: self._dispatch(False, "primary")
-            self.right_button.when_pressed = lambda: self._dispatch(True, "right")
-            self.right_button.when_released = lambda: self._dispatch(False, "right")
-            print("Shared GPIO input active on pins", single_pin, "and", right_pin)
+            self.single_button = Button(
+                single_pin,
+                bounce_time=0.01,
+            )
+
+            self.right_button = Button(
+                right_pin,
+                bounce_time=0.01,
+            )
+
+            self.single_button.when_pressed = lambda: self._dispatch(
+                True,
+                "primary",
+            )
+
+            self.single_button.when_released = lambda: self._dispatch(
+                False,
+                "primary",
+            )
+
+            self.right_button.when_pressed = lambda: self._dispatch(
+                True,
+                "right",
+            )
+
+            self.right_button.when_released = lambda: self._dispatch(
+                False,
+                "right",
+            )
+
+            print(
+                "Shared GPIO input active on pins",
+                single_pin,
+                "and",
+                right_pin,
+            )
+
         except Exception as error:
             print(f"GPIO input unavailable: {error}")
 
+    @Slot(str)
+    def setActiveMode(
+        self,
+        mode: str,
+    ) -> None:
+        self._active_mode = str(mode)
+
+        print(
+            "Physical input mode:",
+            self._active_mode,
+        )
+
+    @Slot()
+    def clearActiveMode(self) -> None:
+        print(
+            "Physical input mode cleared:",
+            self._active_mode,
+        )
+
+        self._active_mode = ""
+
     def _active_target(self):
-        if self.online_game.running:
-            return self.online_game
-        if self.sentence.running:
-            return self.sentence
-        if self.word.running:
-            return self.word
-        if self.letter.running:
+        if self._active_mode == "Letter":
             return self.letter
+
+        if self._active_mode == "Word":
+            return self.word
+
+        if self._active_mode == "Sentence":
+            return self.sentence
+
+        if self._active_mode == "Online":
+            return self.online_game
+
         return None
 
-    def _input_type(self, target):
+    def _input_type(
+        self,
+        target,
+    ):
         if target is self.online_game:
             trainer = self.online_game.trainer()
-            return getattr(trainer, "_input_type", "1")
-        return getattr(target, "_input_type", "1")
 
-    def _dispatch(self, pressed, physical_button):
+            if trainer is None:
+                return "1"
+
+            return getattr(
+                trainer,
+                "_input_type",
+                "1",
+            )
+
+        return getattr(
+            target,
+            "_input_type",
+            "1",
+        )
+
+    def _dispatch(
+        self,
+        pressed: bool,
+        physical_button: str,
+    ) -> None:
         target = self._active_target()
+
         if target is None:
             return
 
+        input_type = self._input_type(target)
+
         if physical_button == "primary":
-            button_name = "left" if self._input_type(target) == "2" else "single"
+            button_name = "left" if input_type == "2" else "single"
+
         else:
-            # The second physical button is only meaningful for two-button input.
-            if self._input_type(target) != "2":
+            if input_type != "2":
                 return
+
             button_name = "right"
+
+        print(
+            "GPIO:",
+            self._active_mode,
+            button_name,
+            "pressed" if pressed else "released",
+        )
 
         if pressed:
             target.buttonPressed(button_name)
@@ -151,12 +244,18 @@ def main() -> int:
     word_trainer = WordTrainer(setup_gpio=False)
     sentence_trainer = SentenceTrainer(setup_gpio=False)
     online_bridge = OnlineBridge("http://127.0.0.1:8000")
-    online_game = OnlineGame(online_bridge, letter_trainer, word_trainer, sentence_trainer)
+    online_game = OnlineGame(
+        online_bridge, letter_trainer, word_trainer, sentence_trainer
+    )
     physical_input = PhysicalInputRouter(
         letter_trainer,
         word_trainer,
         sentence_trainer,
         online_game,
+    )
+    engine.rootContext().setContextProperty(
+        "PhysicalInput",
+        physical_input,
     )
     engine.rootContext().setContextProperty(
         "AppBridge",

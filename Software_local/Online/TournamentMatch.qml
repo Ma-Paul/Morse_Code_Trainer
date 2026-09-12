@@ -21,14 +21,20 @@ Page {
     Keys.priority: Keys.BeforeItem
 
     Component.onCompleted: {
-        OnlineGame.configureInput(inputType, leftButtonType, rightButtonType)
-        if (!OnlineGame.start(matchId)) {
-            stackView.pop()
-            return
-        }
-        root.forceActiveFocus()
-    }
+	PhysicalInput.setActiveMode("Online")
 
+	OnlineGame.configureInput(
+	    Globals.eingabeart,
+	    Globals.lefttype,
+	    Globals.righttype
+	)
+
+	OnlineGame.start(matchId)
+    }
+    Component.onDestruction: {
+        OnlineGame.stop()
+	PhysicalInput.clearActiveMode()
+    }
     Keys.onPressed: function(e) {
         if (e.isAutoRepeat || OnlineGame.showingCorrect || OnlineGame.showingMistake)
             return

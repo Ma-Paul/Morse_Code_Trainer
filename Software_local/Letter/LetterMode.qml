@@ -50,6 +50,8 @@ Page {
 	}
     }
     Component.onCompleted: {
+	PhysicalInput.setActiveMode("Letter")
+
 	LetterTrainer.configureInput(
 	    inputType,
 	    leftButtonType,
@@ -60,16 +62,12 @@ Page {
 
 	Qt.callLater(function() {
 	    root.forceActiveFocus()
-	    console.log(
-		"LetterMode keyboard focus:",
-		root.activeFocus
-	    )
 	})
     }
     Component.onDestruction: {
-        LetterTrainer.stop()
+	LetterTrainer.stop()
+	PhysicalInput.clearActiveMode()
     }
-
     /*
         Keyboard simulation is active only in development mode.
 

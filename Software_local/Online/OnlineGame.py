@@ -89,6 +89,27 @@ class OnlineGame(QObject):
         self.word.configureInput(input_type, left_type, right_type)
         self.sentence.configureInput(input_type, left_type, right_type)
 
+    @Slot()
+    def stop(self):
+        if not self._running:
+            return
+
+        self._running = False
+
+        self.timer.stop()
+        self.feedback_timer.stop()
+
+        self._advance_pending = False
+        self._showing_correct = False
+        self._showing_mistake = False
+
+        trainer = self.trainer()
+
+        if trainer is not None:
+            trainer.stop()
+
+        self.stateChanged.emit()
+
     @Slot(int, result=bool)
     def start(self, match_id):
         data = self.bridge.loadMatch(match_id)

@@ -46,21 +46,23 @@ Page {
 	}
     }
     Component.onCompleted: {
-        WordTrainer.configureInput(
-            inputType,
-            leftButtonType,
-            rightButtonType
-        )
+	PhysicalInput.setActiveMode("Word")
 
-        startNewWord()
+	WordTrainer.configureInput(
+	    inputType,
+	    leftButtonType,
+	    rightButtonType
+	)
 
-        Qt.callLater(function() {
-            root.forceActiveFocus()
-        })
+	startNewWord()
+
+	Qt.callLater(function() {
+	    root.forceActiveFocus()
+	})
     }
-
     Component.onDestruction: {
         WordTrainer.stop()
+	PhysicalInput.clearActiveMode()
     }
 
     onVisibleChanged: {

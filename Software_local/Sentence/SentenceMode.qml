@@ -45,20 +45,23 @@ Page {
     }
 
     Component.onCompleted: {
-        SentenceTrainer.configureInput(
-            inputType,
-            leftButtonType,
-            rightButtonType
-        )
-        startNewSentence()
+	PhysicalInput.setActiveMode("Sentence")
 
-        Qt.callLater(function() {
-            root.forceActiveFocus()
-        })
+	SentenceTrainer.configureInput(
+	    inputType,
+	    leftButtonType,
+	    rightButtonType
+	)
+
+	startNewSentence()
+
+	Qt.callLater(function() {
+	    root.forceActiveFocus()
+	})
     }
-
     Component.onDestruction: {
         SentenceTrainer.stop()
+	PhysicalInput.clearActiveMode()
     }
 
     onVisibleChanged: {
