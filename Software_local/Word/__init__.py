@@ -1,0 +1,1 @@
+from .Word import WordTrainer
