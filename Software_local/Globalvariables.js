@@ -33,3 +33,15 @@ function setMode(value) {
 function setShowLetterMorse(value) {
     showLetterMorse = value
 }
+
+
+// Display labels are separate from the stored button-function identifiers.
+function buttonLabel(value) {
+    switch (value) {
+    case "Pause": return qsTr("Gap")
+    case "Lang": return qsTr("Dash")
+    case "Kurz": return qsTr("Dot")
+    case "Zeitgesteuert": return qsTr("Timed")
+    default: return value
+    }
+}

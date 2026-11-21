@@ -318,9 +318,9 @@ class SentenceTrainer(QObject):
 
                 if gap_duration < minimum:
                     if self._waiting_gap_type == "word":
-                        explanation = "Die Pause zwischen den Wörtern war zu kurz."
+                        explanation = "The gap between words was too short."
                     else:
-                        explanation = "Die Pause zwischen den Buchstaben war zu kurz."
+                        explanation = "The gap between letters was too short."
                     self._emit_mistake(explanation)
                     return
 
@@ -388,7 +388,7 @@ class SentenceTrainer(QObject):
         if self._waiting_gap_type == "letter":
             if is_long_pause:
                 self._emit_mistake(
-                    "Die Pause zwischen den Buchstaben war zu lang."
+                    "The gap between letters was too long."
                 )
                 return
             self._advance_after_explicit_gap()
@@ -397,7 +397,7 @@ class SentenceTrainer(QObject):
         if self._waiting_gap_type == "word":
             if not is_long_pause:
                 self._emit_mistake(
-                    "Die Pause zwischen den Wörtern war zu kurz."
+                    "The gap between words was too short."
                 )
                 return
             self._advance_after_explicit_gap()
@@ -414,7 +414,7 @@ class SentenceTrainer(QObject):
         self.inputChanged.emit()
 
         if not self.morse.startswith(self._input):
-            self._emit_mistake("Das zuletzt eingegebene Zeichen ist falsch.")
+            self._emit_mistake("The last symbol entered is incorrect.")
             return
 
         if self._input == self.morse:

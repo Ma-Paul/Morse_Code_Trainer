@@ -1,4 +1,5 @@
 import QtQuick
+import "../Globalvariables.js" as Globals
 import QtQuick.Controls
 import "../" // access to root-level TrainingResultDialog.qml
 
@@ -360,16 +361,16 @@ Page {
                                   leftButtonType === "Pause"
                                   || rightButtonType === "Pause"
                               )
-                              ? qsTr("Pause-Taste drücken")
-                              : qsTr("Buchstabenpause …")
+                              ? qsTr("Press the gap button")
+                              : qsTr("Letter gap …")
                             )
                           : WordTrainer.currentInput.length > 0
-                            ? qsTr("Eingabe: %1").arg(
+                            ? qsTr("Input: %1").arg(
                                   root.displayCode(
                                       WordTrainer.currentInput
                                   )
                               )
-                            : qsTr("Warte auf Eingabe …")
+                            : qsTr("Waiting for input …")
 
                     color: WordTrainer.waitingForLetterGap
                            ? "#007AFF"
@@ -387,11 +388,11 @@ Page {
 
             text: inputType === "2"
                   ? qsTr(
-                        "Tastatur: ← linker Knopf · "
-                        + "→ rechter Knopf"
+                        "Keyboard: ← left button · "
+                        + "→ right button"
                     )
                   : qsTr(
-                        "Tastatur: Leertaste simuliert den Knopf"
+                        "Keyboard: Space simulates the button"
                     )
 
             color: "#8E8E93"
@@ -418,7 +419,7 @@ Page {
 	function onWordCorrect(elapsedSeconds) {
 	    resultDialog.showCorrect(
 		WordTrainer.word.toUpperCase(),
-		qsTr("Wort vollständig eingegeben"),
+		qsTr("Word completed"),
 		elapsedSeconds
 	    )
 	}
@@ -426,7 +427,7 @@ Page {
 	function onMistake() {
 	    resultDialog.showMistake(
 		WordTrainer.word.toUpperCase(),
-		qsTr("Buchstabe: %1").arg(
+		qsTr("Letter: %1").arg(
 		    WordTrainer.currentLetter.toUpperCase()
 		)
 	    )

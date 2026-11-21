@@ -104,7 +104,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Wie möchtest du spielen?")
+                text: qsTr("Choose a training mode")
                 color: "#1D1D1F"
                 font.family: "SF Pro Display"
                 font.pixelSize: 44
@@ -113,7 +113,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Wähle einen Trainingsmodus.")
+                text: qsTr("Select letters, words, sentences or online play.")
                 color: "#6E6E73"
                 font.family: "SF Pro Text"
                 font.pixelSize: 18
@@ -127,19 +127,19 @@ Page {
             Repeater {
                 model: [
                     {
-                        title: qsTr("Buchstabe"),
+                        title: qsTr("Letter"),
                         symbol: "H",
                         value: "Letter",
                         size: 128
                     },
                     {
-                        title: qsTr("Wort"),
+                        title: qsTr("Word"),
                         symbol: "Hello",
                         value: "Word",
                         size: 58
                     },
                     {
-                        title: qsTr("Satz"),
+                        title: qsTr("Sentence"),
                         symbol: "Hello\nworld",
                         value: "Sentence",
                         size: 52
@@ -255,7 +255,7 @@ Page {
                     spacing: 4
 
                     Text {
-                        text: qsTr("Morsecode anzeigen")
+                        text: qsTr("Show Morse code")
                         color: "#1D1D1F"
                         font.family: "SF Pro Text"
                         font.pixelSize: 18
@@ -263,7 +263,7 @@ Page {
                     }
 
                     Text {
-                        text: qsTr("Zeigt die Punkte und Striche an, die eingegeben werden müssen.")
+                        text: qsTr("Show the dots and dashes required for each task.")
                         color: "#6E6E73"
                         font.family: "SF Pro Text"
                         font.pixelSize: 14

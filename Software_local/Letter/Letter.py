@@ -224,7 +224,7 @@ class LetterTrainer(QObject):
         if self._input == self.morse:
             self._emit_correct()
         else:
-            self._emit_mistake("Die Eingabe entspricht nicht dem gesuchten Morsecode.")
+            self._emit_mistake("The input does not match the expected Morse code.")
 
     # ------------------------------------------------------------------
     # Public keyboard/GPIO entry points
@@ -350,7 +350,7 @@ class LetterTrainer(QObject):
         print(f"Input: {self._input}; " f"expected: {self.morse}")
 
         if not self.morse.startswith(self._input):
-            self._emit_mistake("Das zuletzt eingegebene Zeichen ist falsch.")
+            self._emit_mistake("The last symbol entered is incorrect.")
             return
 
         if self._input == self.morse:

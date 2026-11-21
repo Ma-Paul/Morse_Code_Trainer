@@ -65,7 +65,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Was sind die Einstellungen deiner Knöpfe?")
+                text: qsTr("Configure your buttons")
                 color: "#1D1D1F"
                 font.family: "SF Pro Display"
                 font.pixelSize: 42
@@ -74,7 +74,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Lege fest, welche Funktion links und rechts ausgelöst wird.")
+                text: qsTr("Choose the function of the left and right buttons.")
                 color: "#6E6E73"
                 font.family: "SF Pro Text"
                 font.pixelSize: 17
@@ -88,11 +88,11 @@ Page {
             Repeater {
                 model: [
                     {
-                        title: qsTr("Links"),
+                        title: qsTr("Left"),
                         side: "left"
                     },
                     {
-                        title: qsTr("Rechts"),
+                        title: qsTr("Right"),
                         side: "right"
                     }
                 ]
@@ -130,11 +130,13 @@ Page {
                             width: parent.width
                             height: 48
 
+                            textRole: "label"
+                            valueRole: "value"
                             model: [
-                                "Pause",
-                                "Lang",
-                                "Kurz",
-                                "Zeitgesteuert"
+                                { label: qsTr("Gap"), value: "Pause" },
+                                { label: qsTr("Dash"), value: "Lang" },
+                                { label: qsTr("Dot"), value: "Kurz" },
+                                { label: qsTr("Timed"), value: "Zeitgesteuert" }
                             ]
 
                             font.pixelSize: 17
@@ -144,7 +146,7 @@ Page {
                                                    ? Globals.lefttype
                                                    : Globals.righttype
 
-                                const savedIndex = find(savedValue)
+                                const savedIndex = indexOfValue(savedValue)
 
                                 if (savedIndex >= 0) {
                                     currentIndex = savedIndex
@@ -157,9 +159,9 @@ Page {
 
                             function saveSelection() {
                                 if (sideCard.isLeft) {
-                                    Globals.setLefttype(currentText)
+                                    Globals.setLefttype(currentValue)
                                 } else {
-                                    Globals.setRighttype(currentText)
+                                    Globals.setRighttype(currentValue)
                                 }
                             }
 
@@ -184,7 +186,7 @@ Page {
                                     anchors.horizontalCenter: parent.horizontalCenter
 
                                     text: {
-                                        switch (chooser.currentText) {
+                                        switch (chooser.currentValue) {
                                         case "Kurz":
                                             return "•"
 
@@ -212,18 +214,18 @@ Page {
                                     wrapMode: Text.WordWrap
 
                                     text: {
-                                        switch (chooser.currentText) {
+                                        switch (chooser.currentValue) {
                                         case "Kurz":
-                                            return qsTr("Dieser Knopf erzeugt immer einen kurzen Morsepunkt.")
+                                            return qsTr("This button always enters a dot.")
 
                                         case "Lang":
-                                            return qsTr("Dieser Knopf erzeugt immer einen langen Morsestrich.")
+                                            return qsTr("This button always enters a dash.")
 
                                         case "Zeitgesteuert":
-                                            return qsTr("Die Dauer des Tastendrucks entscheidet zwischen kurz und lang.")
+                                            return qsTr("Press duration determines whether a dot or a dash is entered.")
 
                                         default:
-                                            return qsTr("Die Dauer des Tastendrucks entscheidet zwischen einer Buchstaben- und Wortpause (nicht aktiv im Buchstabenmodus)")
+                                            return qsTr("Press duration determines the gap between letters or words (unused in letter mode).")
                                         }
                                     }
 
@@ -270,7 +272,7 @@ Page {
             spacing: 10
 
             Text {
-                text: qsTr("Weiter")
+                text: qsTr("Continue")
                 color: "white"
                 font.pixelSize: 20
                 font.weight: Font.DemiBold

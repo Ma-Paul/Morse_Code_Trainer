@@ -1,4 +1,5 @@
 import QtQuick
+import "../Globalvariables.js" as Globals
 import QtQuick.Controls
 import "../" // access to root-level TrainingResultDialog.qml
 
@@ -329,8 +330,8 @@ Page {
                                   leftButtonType === "Pause"
                                   || rightButtonType === "Pause"
                               )
-                              ? qsTr("Lange Pause-Taste drücken")
-                              : qsTr("Wortpause …")
+                              ? qsTr("Hold the gap button for a word gap")
+                              : qsTr("Word gap …")
                             )
                           : SentenceTrainer.waitingForLetterGap
                             ? (
@@ -339,16 +340,16 @@ Page {
                                     leftButtonType === "Pause"
                                     || rightButtonType === "Pause"
                                 )
-                                ? qsTr("Kurze Pause-Taste drücken")
-                                : qsTr("Buchstabenpause …")
+                                ? qsTr("Press the gap button for a letter gap")
+                                : qsTr("Letter gap …")
                               )
                             : SentenceTrainer.currentInput.length > 0
-                              ? qsTr("Eingabe: %1").arg(
+                              ? qsTr("Input: %1").arg(
                                     root.displayCode(
                                         SentenceTrainer.currentInput
                                     )
                                 )
-                              : qsTr("Warte auf Eingabe …")
+                              : qsTr("Waiting for input …")
 
                     color: (
                                SentenceTrainer.waitingForLetterGap
@@ -366,8 +367,8 @@ Page {
             anchors.horizontalCenter: parent.horizontalCenter
             visible: DevelopmentMode.enabled
             text: inputType === "2"
-                  ? qsTr("Tastatur: ← linker Knopf · → rechter Knopf")
-                  : qsTr("Tastatur: Leertaste simuliert den Knopf")
+                  ? qsTr("Keyboard: ← left button · → right button")
+                  : qsTr("Keyboard: Space simulates the button")
             color: "#8E8E93"
             font.pixelSize: 13
         }
@@ -391,7 +392,7 @@ Page {
         function onSentenceCorrect(elapsedSeconds) {
             resultDialog.showCorrect(
                 SentenceTrainer.sentence.toUpperCase(),
-                qsTr("Satz vollständig eingegeben"),
+                qsTr("Sentence completed"),
                 elapsedSeconds
             )
         }
@@ -399,7 +400,7 @@ Page {
         function onMistake() {
             resultDialog.showMistake(
                 SentenceTrainer.sentence.toUpperCase(),
-                qsTr("Wort: %1 · Buchstabe: %2")
+                qsTr("Word: %1 · Letter: %2")
                     .arg(SentenceTrainer.currentWord.toUpperCase())
                     .arg(SentenceTrainer.currentLetter.toUpperCase())
             )

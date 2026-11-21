@@ -1,4 +1,5 @@
 import QtQuick
+import "../Globalvariables.js" as Globals
 import QtQuick.Controls
 import "../" // access to root-level TrainingResultDialog.qml
 
@@ -260,7 +261,7 @@ Page {
         Text {
             anchors.horizontalCenter: parent.horizontalCenter
 
-            text: qsTr("Buchstabenmodus")
+            text: qsTr("Letter mode")
             color: "#6E6E73"
             font.pixelSize: 20
         }
@@ -344,12 +345,12 @@ Page {
                     anchors.horizontalCenter: parent.horizontalCenter
 
                     text: LetterTrainer.currentInput.length > 0
-                          ? qsTr("Eingabe: %1").arg(
+                          ? qsTr("Input: %1").arg(
                                 root.displayCode(
                                     LetterTrainer.currentInput
                                 )
                             )
-                          : qsTr("Warte auf Eingabe …")
+                          : qsTr("Waiting for input …")
 
                     color: LetterTrainer.currentInput.length > 0
                            ? "#6E6E73"
@@ -366,10 +367,10 @@ Page {
 
             text: inputType === "2"
                   ? qsTr(
-                        "Links: %1 · Rechts: %2"
-                    ).arg(leftButtonType).arg(rightButtonType)
+                        "Left: %1 · Right: %2"
+                    ).arg(Globals.buttonLabel(leftButtonType)).arg(Globals.buttonLabel(rightButtonType))
                   : qsTr(
-                        "Kurzer Tastendruck: Punkt · Langer Tastendruck: Strich"
+                        "Short press: dot · Long press: dash"
                     )
 
             color: "#8E8E93"
@@ -381,8 +382,8 @@ Page {
             visible: DevelopmentMode.enabled
 
             text: inputType === "2"
-                  ? qsTr("Tastatur: ← linker Knopf · → rechter Knopf")
-                  : qsTr("Tastatur: Leertaste simuliert den Knopf")
+                  ? qsTr("Keyboard: ← left button · → right button")
+                  : qsTr("Keyboard: Space simulates the button")
 
             color: "#8E8E93"
             font.pixelSize: 13

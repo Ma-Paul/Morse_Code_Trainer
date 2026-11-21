@@ -137,8 +137,8 @@ Dialog {
 
                 text:
                     root.isCorrect
-                    ? qsTr("Richtig")
-                    : qsTr("Nicht ganz richtig")
+                    ? qsTr("Correct")
+                    : qsTr("Incorrect")
 
                 color: "#1D1D1F"
                 font.pixelSize: 28
@@ -253,7 +253,7 @@ Dialog {
                     Text {
                         width: parent.width
 
-                        text: qsTr("Deine Eingabe:")
+                        text: qsTr("Your input:")
 
                         color: "#6E6E73"
                         font.pixelSize: 15
@@ -267,7 +267,7 @@ Dialog {
                             ? root.displayCode(
                                   root.enteredCode
                               )
-                            : qsTr("keine Eingabe")
+                            : qsTr("no input")
 
                         color: "#FF3B30"
                         font.pixelSize: 24
@@ -280,7 +280,7 @@ Dialog {
                     Text {
                         width: parent.width
 
-                        text: qsTr("Erwartet:")
+                        text: qsTr("Expected:")
 
                         color: "#6E6E73"
                         font.pixelSize: 15
@@ -310,7 +310,7 @@ Dialog {
                 visible: root.isCorrect
 
                 text: qsTr(
-                    "Zeit: %1 s"
+                    "Time: %1 s"
                 ).arg(
                     root.elapsedSeconds.toFixed(2)
                 )
@@ -328,7 +328,7 @@ Dialog {
                 anchors.horizontalCenter:
                     parent.horizontalCenter
 
-                text: qsTr("Weiter")
+                text: qsTr("Continue")
 
                 onClicked: {
                     autoContinue.stop()

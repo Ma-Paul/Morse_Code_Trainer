@@ -102,7 +102,7 @@ Page {
         }
     }
 
-    Dialog { id:identityDialog; anchors.centerIn:parent; modal:true; closePolicy:OnlineBridge.playerId.length===0?Popup.NoAutoClose:Popup.CloseOnEscape; title:qsTr("Wie möchtest du heißen?")
+    Dialog { id:identityDialog; anchors.centerIn:parent; modal:true; closePolicy:OnlineBridge.playerId.length===0?Popup.NoAutoClose:Popup.CloseOnEscape; title:qsTr("What is your player name?")
         Column { spacing:14
             Text { width:340; text:qsTr("This ID is your name in tournaments and leaderboards."); color:"#6E6E73"; wrapMode:Text.WordWrap }
             TextField { id:idField; width:340; text:OnlineBridge.playerId; placeholderText:qsTr("Player ID"); maximumLength:32 }

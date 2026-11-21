@@ -326,7 +326,7 @@ class WordTrainer(QObject):
 
                 if gap_duration < self.LETTER_GAP_MIN_SECONDS:
                     self._emit_mistake(
-                        "Die Pause zwischen den Buchstaben " "war zu kurz."
+                        "The gap between letters was too short."
                     )
                     return
 
@@ -488,7 +488,7 @@ class WordTrainer(QObject):
         )
 
         if not self.morse.startswith(self._input):
-            self._emit_mistake("Das zuletzt eingegebene Zeichen ist falsch.")
+            self._emit_mistake("The last symbol entered is incorrect.")
             return
 
         if self._input == self.morse:

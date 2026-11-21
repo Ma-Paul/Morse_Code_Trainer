@@ -52,7 +52,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Welche Art der Eingabe besitzt du?")
+                text: qsTr("Which input device are you using?")
                 color: "#1D1D1F"
                 font.family: "SF Pro Display"
                 font.pixelSize: 44
@@ -61,7 +61,7 @@ Page {
 
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Wähle dein Morse-Eingabegerät.")
+                text: qsTr("Select your Morse input device.")
                 color: "#6E6E73"
                 font.family: "SF Pro Text"
                 font.pixelSize: 18
@@ -74,8 +74,8 @@ Page {
 
             Repeater {
                 model: [
-                    { title: qsTr("Eine Taste"), subtitle: qsTr("Klassische Handtaste"), image: "Single.png", value: "1", target: "Mode.qml" },
-                    { title: qsTr("Zwei Tasten"), subtitle: qsTr("Doppel- oder Paddle-Taste"), image: "Double.png", value: "2", target: "Specifytype.qml" }
+                    { title: qsTr("One button"), subtitle: qsTr("Straight key"), image: "Single.png", value: "1", target: "Mode.qml" },
+                    { title: qsTr("Two buttons"), subtitle: qsTr("Dual-button key or paddle"), image: "Double.png", value: "2", target: "Specifytype.qml" }
                 ]
 
                 delegate: Rectangle {
